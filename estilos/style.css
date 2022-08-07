@@ -52,8 +52,6 @@ header{
 header img{ 
     height: 45px;
     width: 150px;
-}
-header img{
     padding-left: 10%;
 }
 
@@ -140,3 +138,7 @@ padding: 2%;
     margin-right: auto;
 }
 
+.logo-footer{
+    height: 45px;
+    width: 150px;
+}
