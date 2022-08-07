@@ -10,26 +10,24 @@
 <body>
     <!-- menu -->
    <main>
+    <div class="nav"> 
     <header>
-        <a> logo </a>
-        <nav>
-        <ul>
+        <img src="estilos/logo-beelingue-2.png" alt="Beelíngue">
+        <ul class="dropdown">
             <li> Home</li>
             <li> Planos </li>
             <li> Sobre</li>
-        </ul>
-        <div>
-            <button> Entrar </button>
-            <button> Cadastrar-se </button>
-        </div>
-    </nav>
+            <li> Entrar</li>
+            <li> Cadastrar-se</li>
+    </ul>
     </header>
+</div>
    </main>
-
+   <div class="row"> </div>
    <!-- apresentação inicial -->
-<div>
-    <div>
-        <div>
+<div class="blocoA">
+    <div class="col">
+        <div class="slogan">
             <div> <h1> LOREM ipsum dolor sit amet, consectetur 
                 adipiscing elit, SED do eiusmod TEMPOR </h1>
             </div>
@@ -37,30 +35,31 @@
                 <h4> Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
                     accusantium doloremque laudantium, totam rem aperiam.</h4>
             </div>
-            <div>
-                <button> Teste GRÁTIS </button>
-                <button> Matricular-se</button>
+            <div class="button">
+                <a href="#" class="teste-gratis"> Teste GRÁTIS </a>
+                <a href="#" class="matricula"> Matricular-se</a>
             </div>
         </div>
 
         <div> 
-            <img> <!-- img da plataforma -->
+            <img src="estilos/sotware-wireframe.png" alt="imagem interna da plataforma"> 
         </div>
     </div>
 
+    <div class="row"> </div>
 
 </div>
 <div> <!-- BLOCO https://getbootstrap.com/docs/5.2/examples/features/ --> 
-    <div> 
+    <div class="title"> 
         <div> <h1> POR QUE A BEELÍNGUE? </h1>
         </div>
         <div> <h4> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
             enim ipsam voluptatem quia </h4>
         </div>
     </div>
- 
-    <div>
-        <div> icone </div>
+<div class="col"> 
+ <div class="col-b">
+        <div> <img src="estilos/icone.png" alt="icone"> </div>
         <h2>
             Finibus Bonorum 
         </h2>
@@ -71,8 +70,8 @@ ut labore et dolore magna.
         </p>
     </div>
     
-    <div>
-        <div> icone </div>
+    <div class="col-b">
+        <div> <img src="estilos/icone.png" alt="icone"> </div>
         <h2>
             Finibus Bonorum 
         </h2>
@@ -83,8 +82,8 @@ ut labore et dolore magna.
         </p>
     </div>
 
-    <div>
-        <div> icone </div>
+    <div class="col-b">
+        <div> <img src="estilos/icone.png" alt="icone"> </div>
         <h2>
             Finibus Bonorum 
         </h2>
@@ -95,8 +94,8 @@ ut labore et dolore magna.
         </p>
     </div>
 
-    <div>
-        <div> icone </div>
+    <div class="col-b">
+        <div> <img src="estilos/icone.png" alt="icone"> </div>
         <h2>
             Finibus Bonorum 
         </h2>
@@ -107,8 +106,8 @@ ut labore et dolore magna.
         </p>
     </div>
 
-    <div>
-        <div> icone </div>
+    <div class="col-b">
+        <div> <img src="estilos/icone.png" alt="icone"> </div>
         <h2>
             Finibus Bonorum 
         </h2>
@@ -119,8 +118,8 @@ ut labore et dolore magna.
         </p>
     </div>
 
-    <div>
-        <div> icone </div>
+    <div class="col-b">
+        <div> <img src="estilos/icone.png" alt="icone"> </div>
         <h2>
             Finibus Bonorum 
         </h2>
@@ -131,48 +130,61 @@ ut labore et dolore magna.
         </p>
     </div>
 
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
+
+</div>
 </div>
 
-
+<div class="row"> </div>
 
 <div>
-    <div>
+    <div class="title">
         <h1>
             LOREM IPSUM
         </h1>
     </div>
-    <div>
-        <div>
-            plano 1
-            <div> 
-                <button> teste GRATIS </button>
+    
+    <div class="col">
+        <div class="bloc">
+        <div class="col-c">
+            <p>  plano 1 </p>
+            <ul>
+                <li> lorem </li>
+                <li> lorem </li>
+                <li> lorem </li>
+                <li> lorem </li>
+            </ul>
+            <div class="button"> 
+                <a href="#" class="teste-gratis">  teste GRATIS </a>
             </div>
         </div>
-        <div>
-            plano 2
-            <div> 
-                <button> R$75 </button>
+        
+        
+        <div class="col-d">
+            <p>  plano 1 </p>
+            <ul>
+                <li> lorem </li>
+                <li> lorem </li>
+                <li> lorem </li>
+                <li> lorem </li>
+            </ul>
+            <div class="button"> 
+                <a href="#" class="matricula"> R$75 </a> <!-- viola regras de aninhamento-->
             </div>
         </div>
-    </div>
+        
+   </div>
+
 </div>
+</div>
+
+
+<div class="row"> </div>
 
 <div>
     <footer>
         <div>
         <div>
-            <img> logo
+            <img src="#" alt="Beelingue"> logo
         </div>
         <h3>
             mnis iste natus error sit voluptatem accusantium
