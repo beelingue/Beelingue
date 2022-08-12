@@ -1,202 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Beelíngue </title>
     <link rel="stylesheet" href="estilos/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">  
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- Button com animação -->
+
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(0, 0, 0, 0) ;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo/logo.png" alt="Beelingue logo" width="90" height="84">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="right buttons">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Exercicios</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="usuario" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Usuario
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-meu-lg-start" aria-labelledby="usuario">
+                  <li><a class="dropdown-item" href="#">Configurações</a></li>
+                  <li><a class="dropdown-item" href="#">Conta</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </nav>                  
+                        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>  
+                </div> 
+                </nav>
+       
+    <style>
+  .navbar-brand {
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  #right buttons{
+    margin-left: 450%;
+    text-align: right;
+  }
+
+  * {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.col {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row align-items-center:after {
+  content: "";
+  display: flex;
+  clear: both;
+}
+.col{
+  border: 20px;
+  border-radius: 25px;
+  padding: 2%;
+  margin: 2%;
+  transition: 0.2s;
+}
+
+.col:hover {
+  width: 300px;
+  height: 300px;
+  padding: 100px;
+}
+.text:hover {
+  text-align:left;
+  left: 300px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
 </head>
 <body>
-    <!-- menu -->
+  <br>
+  <h3 style="text-align:center;">Modulos</h3>
+    <!-- Colunas para colocar os modulos das aulas -->
+    <div class="container">
+
+    <div class="row align-items-center">
+      <div class="col" style="background-color: red ;">
+      <div class="text">
+        <h2>One of three columns</h2>
+        <p>Nam sem libero, sodales eu aliquam ut, ornare sollicitudin dolor</p>
+      </div>
+      </div>
+      <div class="col" style="background-color: #bbb ;">
+        <h2>One of three columns</h2>
+        <p>Descrições fodas</p>
+      </div>
+      <div class="col" style="background-color: #ccc ;">
+        <h2>One of three columns</h2>
+        <p>Descrições fodas</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+
+    <div class="row align-items-center">
+      <div class="col" style="background-color: #aaa ;">
+        <h2>One of three columns</h2>
+        <p>Descrições fodas</p>
+      </div>
+      <div class="col" style="background-color: #bbb ;">
+        <h2>One of three columns</h2>
+        <p>Descrições fodas</p>
+      </div>
+      <div class="col" style="background-color: #ccc ;">
+        <h2>One of three columns</h2>
+        <p>Descrições fodas</p>
+      </div>
+    </div>
+  </div>
    <main>
     <header>
-        <a> logo </a>
-        <nav>
-        <ul>
-            <li> Home</li>
-            <li> Planos </li>
-            <li> Sobre</li>
-        </ul>
-        <div>
-            <button> Entrar </button>
-            <button> Cadastrar-se </button>
-        </div>
-    </nav>
     </header>
-   </main>
-
-   <!-- apresentação inicial -->
-<div>
-    <div>
-        <div>
-            <div> <h1> LOREM ipsum dolor sit amet, consectetur 
-                adipiscing elit, SED do eiusmod TEMPOR </h1>
-            </div>
-            <div>
-                <h4> Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-                    accusantium doloremque laudantium, totam rem aperiam.</h4>
-            </div>
-            <div>
-                <button> Teste GRÁTIS </button>
-                <button> Matricular-se</button>
-            </div>
-        </div>
-
-        <div> 
-            <img> <!-- img da plataforma -->
-        </div>
-    </div>
+  </main>
 
 
-</div>
-<div> <!-- BLOCO https://getbootstrap.com/docs/5.2/examples/features/ --> 
-    <div> 
-        <div> <h1> POR QUE A BEELÍNGUE? </h1>
-        </div>
-        <div> <h4> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-            enim ipsam voluptatem quia </h4>
-        </div>
-    </div>
- 
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-    
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-</div>
-
-
-
-<div>
-    <div>
-        <h1>
-            LOREM IPSUM
-        </h1>
-    </div>
-    <div>
-        <div>
-            plano 1
-            <div> 
-                <button> teste GRATIS </button>
-            </div>
-        </div>
-        <div>
-            plano 2
-            <div> 
-                <button> R$75 </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div>
     <footer>
-        <div>
-        <div>
-            <img> logo
-        </div>
-        <h3>
-            mnis iste natus error sit voluptatem accusantium
-doloremque laudantium, totam rem aperiam.
-        </h3>
- <div>
-    <h2> NOVAS BOLSAS DE ESTUDO </h2>
+      <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Nos siga nas redes sociais:</span>
+    </div>
+    <!-- Left -->
+    <!-- Right -->
     <div>
-        <form>
-            <input type="text" placeholder="email@exemplo.com">
-            <input type="submit" value="enviar">
-            </form>
+      <a href="" class="me-4 text-reset">
+        <img src="img/Brands/facebook.png"></a>
+      <a href="" class="me-4 text-reset">
+        <img src="img/Brands/google.png"></a>
+      <a href="" class="me-4 text-reset">
+        <img src="img/Brands/instagram.png"></a>
+      <a href="" class="me-4 text-reset">
+        <img src="img/Brands/twitter.png"></a>
     </div>
- </div>
-    </div>
-<div>
-    <ul>
-        <li> <a > LOREM </a></li>
-        <li> <a > LOREM </a></li>
-        <li> <a > Suporte </a></li>
-    </ul>
-</div>
-    </footer>
-</div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+  <section class="">
+    <br>
+    <form action="">
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+        <!--Grid column-->
+        <div class="col-auto">
+          <p class="pt-2">
+            <strong>Envie sugestões</strong>
+          </p>
+        </div>
+        <!--Grid column-->
 
+        <!--Grid column-->
+        <div class="col-md-5 col-12">
+          <!-- Email input -->
+          <div class="form-outline form-white mb-4">
+            <input type="email" id="form5Example21" class="form-control" />
+            <label class="form-label" for="form5Example21">Endereço de Email</label>
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-auto">
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-outline-dark mb-4">
+            Enviar
+          </button>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </form>
+  </section>
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>BEELINGUE
+          </h6>
+          <p>
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            EMPRESA
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Sobre nós</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Termos de Uso</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Política de Privacidade</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Trabalhe conosco</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4"> Contatos</h6>
+          <p><img src="img/User Interface/House.png"> Praia Grande, 2222, SP</p>
+          <p><img src="img/Communication/message.png"> belingue@foda.com</p>
+          <p><img src="img/Communication/call.png"> +13 123456789</p>
+          <p><img src="img/Communication/call.png"> +13 123456789</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://beelingue.com/">Beelingue.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>  
 </body>
 </html>
