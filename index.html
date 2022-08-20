@@ -5,39 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Beelíngue </title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">  
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <!-- Button com animação -->
 
+<!-- Barra de navegação-->
     <nav class="navbar navbar-expand-lg" style="background-color: rgba(0, 0, 0, 0) ;">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="img/logo/logo.png" alt="Beelingue logo" width="90" height="84">
+            <!-- Logo centralizado -->
+            <img src="img/logo/logo.png" alt="Beelingue logo" width="90" height="90">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- Div para colocar os botões na direita -->
           <div id="right buttons">
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Exercicios</a>
+                <!-- Área de tarefas -->
+                <a class="nav-link active" aria-current="page" href="#"><img src="img/Communication/livro.png" width="38" height="38"></a>
               </li>
+                <!-- Área de tarefas -->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="usuario" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Usuario
-                </a>
+                  <img src="img/User Interface/user1.png" width="32" height="32">
+                  Enzo</a>
                 <ul class="dropdown-menu dropdown-menu-end dropdown-meu-lg-start" aria-labelledby="usuario">
                   <li><a class="dropdown-item" href="#">Configurações</a></li>
                   <li><a class="dropdown-item" href="#">Conta</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Sair</a></li>
                 </ul>
               </li>
             </ul>
           </div>
+          <!-- Div para colocar os botões na direita -->
         </div>
       </div>
       </nav>                  
@@ -46,101 +52,56 @@
                         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>  
                 </div> 
                 </nav>
-       
-    <style>
-  .navbar-brand {
-    margin-left: 50%;
-    transform: translate(-50%);
-  }
-  #right buttons{
-    margin-left: 450%;
-    text-align: right;
-  }
-
-  * {
-  box-sizing: border-box;
-}
-
-/* Create three equal columns that floats next to each other */
-.col {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row align-items-center:after {
-  content: "";
-  display: flex;
-  clear: both;
-}
-.col{
-  border: 20px;
-  border-radius: 25px;
-  padding: 2%;
-  margin: 2%;
-  transition: 0.2s;
-}
-
-.col:hover {
-  width: 300px;
-  height: 300px;
-  padding: 100px;
-}
-.text:hover {
-  text-align:left;
-  left: 300px;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-</style>
+<!-- Barra de navegação -->
 </head>
-<body>
+<body class="corfundo">
   <br>
   <h3 style="text-align:center;">Modulos</h3>
+  <br>
     <!-- Colunas para colocar os modulos das aulas -->
     <div class="container">
 
     <div class="row align-items-center">
-      <div class="col" style="background-color: red ;">
+      <div class="col" style="background-color: rgb(124, 185, 250);">
       <div class="text">
         <h2>One of three columns</h2>
         <p>Nam sem libero, sodales eu aliquam ut, ornare sollicitudin dolor</p>
+        <button class="button button1" href="#">Entrar</button>
       </div>
       </div>
-      <div class="col" style="background-color: #bbb ;">
+      <div class="col" style="background-color: rgb(124, 185, 250);">
+        <h2>One of three columns</h2>
+        <p>Descrições fodas zap zap zap zap zap zap zap zap zap zap zap zap zap</p>
+        <button class="button button1" href="#">Entrar</button>
+      </div>
+      <div class="col" style="background-color: rgb(124, 185, 250);">
         <h2>One of three columns</h2>
         <p>Descrições fodas</p>
-      </div>
-      <div class="col" style="background-color: #ccc ;">
-        <h2>One of three columns</h2>
-        <p>Descrições fodas</p>
+        <button class="button button1" href="#">Entrar</button>
       </div>
     </div>
   </div>
   <div class="container">
 
     <div class="row align-items-center">
-      <div class="col" style="background-color: #aaa ;">
+      <div class="col" style="background-color: rgb(124, 185, 250);">
         <h2>One of three columns</h2>
         <p>Descrições fodas</p>
+        <button class="button button1" href="#">Entrar</button>
       </div>
-      <div class="col" style="background-color: #bbb ;">
+      <div class="col" style="background-color: rgb(124, 185, 250);">
         <h2>One of three columns</h2>
         <p>Descrições fodas</p>
+        <button class="button button1" href="#">Entrar</button>
       </div>
-      <div class="col" style="background-color: #ccc ;">
+      <div class="col" style="background-color: rgb(124, 185, 250);">
         <h2>One of three columns</h2>
         <p>Descrições fodas</p>
+        <button class="button button1" href="#">Entrar</button>
       </div>
     </div>
   </div>
+  <!-- Colunas para colocar os modulos de aula -->
    <main>
     <header>
     </header>
@@ -149,20 +110,18 @@
 
     <footer>
       <!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted">
+<footer class="text-center text-lg-start text-muted" style="background-color: #f0c74c;">
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <!-- Left -->
     <div class="me-5 d-none d-lg-block">
-      <span>Nos siga nas redes sociais:</span>
+      <span class="cortext">Nos siga nas redes sociais:</span>
     </div>
     <!-- Left -->
     <!-- Right -->
     <div>
       <a href="" class="me-4 text-reset">
         <img src="img/Brands/facebook.png"></a>
-      <a href="" class="me-4 text-reset">
-        <img src="img/Brands/google.png"></a>
       <a href="" class="me-4 text-reset">
         <img src="img/Brands/instagram.png"></a>
       <a href="" class="me-4 text-reset">
@@ -179,7 +138,7 @@
         <!--Grid column-->
         <div class="col-auto">
           <p class="pt-2">
-            <strong>Envie sugestões</strong>
+            <strong class="cortext">Envie sugestões</strong>
           </p>
         </div>
         <!--Grid column-->
@@ -189,7 +148,7 @@
           <!-- Email input -->
           <div class="form-outline form-white mb-4">
             <input type="email" id="form5Example21" class="form-control" />
-            <label class="form-label" for="form5Example21">Endereço de Email</label>
+            <label class="form-label" for="form5Example21" id="cortext">Endereço de Email</label>
           </div>
         </div>
         <!--Grid column-->
@@ -197,9 +156,7 @@
         <!--Grid column-->
         <div class="col-auto">
           <!-- Submit button -->
-          <button type="submit" class="btn btn-outline-dark mb-4">
-            Enviar
-          </button>
+          <button type="submit" class="btn btn-outline-white mb-4" id="cortext">Enviar</button>
         </div>
         <!--Grid column-->
       </div>
@@ -214,10 +171,10 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
+          <h6 class="text-uppercase fw-bold mb-4" id="cortext">
             <i class="fas fa-gem me-3"></i>BEELINGUE
           </h6>
-          <p>
+          <p id="cortext">
             "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
           </p>
@@ -225,7 +182,7 @@
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" id="cortext">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">
             EMPRESA
@@ -246,7 +203,7 @@
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" id="cortext">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4"> Contatos</h6>
           <p><img src="img/User Interface/House.png"> Praia Grande, 2222, SP</p>
@@ -262,7 +219,7 @@
   <!-- Section: Links  -->
 
   <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);" id="cortext">
     © 2021 Copyright:
     <a class="text-reset fw-bold" href="https://beelingue.com/">Beelingue.com</a>
   </div>
