@@ -5,12 +5,20 @@
     }
 }
 
-/*Baackgrounds*/
-main{
-    background-image: url("../img/apresentacaoinicial.png");
-    background-repeat: no-repeat;
+/*Fontes*/
+p, h2, h1, h3, h4, h5, h6{
+    font-family:"Roboto", Verdana, Sans-serif;
 }
-/*Backgrounds*/
+
+
+/*Fontes*/
+/*Baackgrounds ( 　ﾟ,_ゝﾟ)*/
+main{
+    background-image: url("../img/Rectangle38.png");
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+}
+/*Backgrounds ( 　ﾟ,_ゝﾟ)*/
 
 /* Cor dos textos do footer*/
 .cortext {
@@ -49,16 +57,16 @@ h1 {
 /*Botões da Navegação*/
 .button {
     border: 3px;
-          border-radius: 12px;
-          color: black;
-          padding: 3px 10px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          margin: 4px 2px;
-          transition-duration: 0.4s;
-          cursor: pointer;
+    font-family:"Roboto", Verdana, Sans-serif;
+    border-radius: 12px;
+    color: black;
+    padding: 3px 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
   }
 
 /*Botão de Teste Grátis*/
@@ -66,11 +74,11 @@ h1 {
     margin-left: 20%;
     background-color: white;
     color: #1d1d1b;
-    border: 2px solid #427CBA;
+    border: 2px solid #409cff;
     padding: 6px 14px;
 }
 .buttonteste:hover {
-    background-color: #427CBA;
+    background-color: #409cff;
     color: #1d1d1b;
 }
 /*Botão de Teste Grátis*/
@@ -156,23 +164,94 @@ header img{
 }
 
 /*Planos*/
-.col-c{
-    background-color: violet;
-    height: 315px;
-    width: 55%;
-    border-radius: 0.5rem;
+section {
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: 100vh;
+    background: #FECB37;
+    overflow: hidden;
+}
+section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url("../img/wave.png");
+    background-size: 1000px 100px;
+}
+section .wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+section .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+section .wave.wave3 {
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15;
+}
+section .wave.wave4 {
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1000px;
+    }
 }
 
-.col-d{
-    background-color: violet;
-    height: 315px;
+.col-c{
+    background-color: rgb(255, 216, 98);
+    height: 400px;
     width: 55%;
-    border-radius: 0.5rem;
+    border-radius: 10px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
 }
+.col-c:hover{
+    box-shadow:  0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+    cursor: pointer;
+  }
+.col-d{
+    background-color: rgb(255, 216, 98);
+    height: 400px;
+    width: 55%;
+    border-radius: 10px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col-d:hover{
+    box-shadow:  0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+    cursor: pointer;
+  }
+
 /*Planos*/

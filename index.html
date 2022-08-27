@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,14 +11,19 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <!-- Button com animação -->
-</head>
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--Fonte-->
+  </head>
 <body>
 <header>
 <!-- Barra de navegação-->
 <nav class="navbar navbar-expand navbar-light ">
   <div class="container">
       <a class="navbar-brand" href="#">
-          <img src="img/logo/logo site.png" width="140" height="40" class="d-inline-block align-top" alt="logo"> <!--Logo imagem-->
+          <img src="img/logo/logosite.png" width="140" height="40" class="d-inline-block align-top" alt="logo"> <!--Logo imagem-->
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -43,44 +48,44 @@
                       <a class="nav-link" href="#cadastro"></a>
                     </li>    
                   </ul>
-                </div>
-            
-              </div>
-            </nav>
-          
+                </div>  
+              </div> 
           <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>  
-  </div> 
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>   
 </nav>
-<!-- Barra de navegação -->
 </header>
-   <main>
+<!-- Barra de navegação -->
 
+<main>
     <!--apresentação inicial-->
+    <section id="secaoinicial">
     <div class="container">
+      
       <div class="containertext">
       <br>
-      <br><br>
+      <br>
+      <br>
       <div id="justificado">
       <h2>APRESENTAÇÕES FODAS DIGDIM</h2>
       <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quam diam, tempor et tellus eu, ultricies malesuada lorem. Morbi tincidunt purus eu magna pulvinar efficitur. Nulla vel purus sit amet lectus mattis mollis. Mauris faucibus diam at ornare congue.</h4>
       </div>
       <br>
-      <button class="button buttonteste">Teste GRÁTIS</button>
+      <button class="button buttonteste">Teste Grátis</button>
       <button class="button buttoncadastro">Cadastrar-se</button>
     </div>
-  <img src="estilos/sotware-wireframe.png" class="wireframeimage" alt="imagem">
-  </div>
-<!--apresentação inicial-->
-<!--Argumentação-->
-    <div class="title"> 
-      <div> <h1> POR QUE A BEELÍNGUE? </h1>
-      </div>
-      <div> <h4 id="centro"> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-          enim ipsam voluptatem quia </h4>
-      </div>
+      <img src="estilos/sotware-wireframe.png" class="wireframeimage" alt="imagem">
+    </div>
+    </section>
 
+
+
+  <!--apresentação inicial-->
+  <!--Argumentação-->
+    <section id="secaoarg">
+    <div class="title"> 
+      <h1> POR QUE A BEELÍNGUE? </h1>
+      <h4 id="centro"> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit enim ipsam voluptatem quia </h4>
   </div>
 <div class="col"> 
 <div class="col-b">
@@ -156,57 +161,80 @@ ut labore et dolore magna.
       </p>
   </div>
 </div>
+</section>
 <!--Argumentação-->
 
 <!--Planos-->
-<div>
+
+<section id="secaoplanos">
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+  <div>
   <div class="title">
       <h1>
-          LOREM IPSUM
+          PLANOS
       </h1>
   </div>
   
   <div class="col">
-      <div class="bloc">
       <div class="col-c">
-          <p>  plano 1 </p>
+        <br>
+          <h4 id="centro">Plano basico</h4>
           <ul>
+            <br>
               <li> lorem </li>
+            <br>  
               <li> lorem </li>
+            <br>  
               <li> lorem </li>
+            <br>  
               <li> lorem </li>
-          </ul>
-          <div class="button"> 
-              <a href="#" class="teste-gratis">  teste GRATIS </a>
-          </div>
+          </ul>    
+              <a href="#"></a>
+          <br>
+          <br>
+          <br>
+              <h5 id="centro">Teste Grátis</h5>
       </div>
       
-      
       <div class="col-d">
-          <p>  plano 1 </p>
+        <br>
+          <h4 id="centro">Plano avançado</h4>
           <ul>
+            <br>
               <li> lorem </li>
+            <br>
               <li> lorem </li>
+            <br>  
               <li> lorem </li>
+            <br>
               <li> lorem </li>
           </ul>
-          <div class="button"> 
-              <a href="#" class="matricula"> R$75 </a> <!-- viola regras de aninhamento-->
-          </div>
+          <!--Colocar um caminho para os planos-->
+              <a href="#"></a> <!-- viola regras de aninhamento-->
+          <!--Colocar um caminho para os planos-->
+          <br>
+          <br>
+          <br>
+              <h5 id="centro">Cadastrar-se</h5>
+            </div>
       </div>
       
  </div>
 
 </div>
 </div>
+</section>
 <!--Planos-->
 </main>
    
-<div>
-    <footer>
+
         <!-- Footer -->
   <footer class="text-center text-lg-start text-muted" style="background-color: #f0c74c;">
     <!-- Section: Social media -->
+  <div>
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
       <!-- Left -->
       <div class="me-5 d-none d-lg-block">
@@ -216,12 +244,13 @@ ut labore et dolore magna.
       <!-- Right -->
       <div>
         <a href="" class="me-4 text-reset">
-          <img src="img/Brands/facebook.png"></a>
+          <img src="img/brands/facebook.png"></a>
         <a href="" class="me-4 text-reset">
-          <img src="img/Brands/instagram.png"></a>
+          <img src="img/brands/instagram.png"></a>
         <a href="" class="me-4 text-reset">
-          <img src="img/Brands/twitter.png"></a>
+          <img src="img/brands/twitter.png"></a>
       </div>
+    </div>
       <!-- Right -->
     </section>
     <!-- Section: Social media -->
@@ -319,7 +348,6 @@ ut labore et dolore magna.
       <a class="text-reset fw-bold" href="https://beelingue.com/">Beelingue.com</a>
     </div>
     <!-- Copyright -->
-  
   </footer> 
 </div>
 
