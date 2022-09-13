@@ -1,202 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Beelíngue </title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <title> Cadastro </title>
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+        crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- Button com animação -->
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--Fonte-->
 </head>
-<body>
-    <!-- menu -->
-   <main>
-    <header>
-        <a> logo </a>
-        <nav>
-        <ul>
-            <li> Home</li>
-            <li> Planos </li>
-            <li> Sobre</li>
-        </ul>
-        <div>
-            <button> Entrar </button>
-            <button> Cadastrar-se </button>
-        </div>
-    </nav>
-    </header>
-   </main>
 
-   <!-- apresentação inicial -->
-<div>
-    <div>
-        <div>
-            <div> <h1> LOREM ipsum dolor sit amet, consectetur 
-                adipiscing elit, SED do eiusmod TEMPOR </h1>
+<body style="background-color: #fecb37;">
+
+  <!--Cadastro de aluno-->
+  <section class="h-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+          <div class="card card-registration my-4">
+            <div class="row g-0">
+              <div class="col-xl-6 d-none d-xl-block">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                  alt="Sample photo" class="img-fluid"
+                  style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+              </div>
+              <div class="col-xl-6">
+                <div class="card-body p-md-5 text-black">
+                  <h3 class="mb-5 text-uppercase">Cadastro de Aluno</h3>
+  
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="form3Example1m" class="form-control form-control-lg" placeholder="Gabriel" />
+                        <label class="form-label" for="form3Example1m">Primeiro nome</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="form3Example1n" class="form-control form-control-lg" placeholder="Scheamidt" />
+                        <label class="form-label" for="form3Example1n">Segundo nome</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="text" id="form3Example8" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example8">Nome de Usuário</label>
+                  </div>
+  
+                  <div class="form-outline mb-4">
+                    <input type="text" id="form3Example8" class="form-control form-control-lg" placeholder="oscaralho@gmail.com" />
+                    <label class="form-label" for="form3Example8">Endereço de Email</label>
+                  </div>
+  
+                  <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+  
+                    <h6 class="mb-0 me-4">Gender: </h6>
+  
+                    <div class="form-check form-check-inline mb-0 me-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                        value="option1" />
+                      <label class="form-check-label" for="femaleGender">Feminino</label>
+                    </div>
+  
+                    <div class="form-check form-check-inline mb-0 me-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                        value="option2" />
+                      <label class="form-check-label" for="maleGender">Masculino</label>
+                    </div>
+  
+                    <div class="form-check form-check-inline mb-0">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                        value="option3" />
+                      <label class="form-check-label" for="otherGender">Outro</label>
+                    </div>
+  
+                  </div>
+  
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+  
+                      <select class="form-select">
+                        <option value="1">Estado</option>
+                        <option value="2">sexo1</option>
+                        <option value="3">sexo2</option>
+                        <option value="4">sexo3</option>
+                      </select>
+  
+                    </div>
+                    <div class="col-md-6 mb-4">
+  
+                      <select class="form-select">
+                        <option value="1">Cidade</option>
+                        <option value="2">zap1</option>
+                        <option value="3">zap2</option>
+                        <option value="4">zap3</option>
+                      </select>
+  
+                    </div>
+                  </div>
+  
+                  <div class="form-outline mb-4">
+                    <input type="text" id="form3Example90" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example90">Senha</label>
+                  </div>
+  
+                  <div class="form-outline mb-4">
+                    <input type="text" id="form3Example99" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example99">Repita a senha</label>
+                  </div>
+
+                  <div class="d-flex justify-content-end pt-3">
+                    <button type="button" class="btn btn-outline-warning " href="paginadeapresentacao.html">Voltar</button>
+                    <a href="pagamento.html"><button type="button" class="btn btn-primary ms-2" >Proximo</button></a>
+                  </div>
+  
+                </div>
+              </div>
             </div>
-            <div>
-                <h4> Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-                    accusantium doloremque laudantium, totam rem aperiam.</h4>
-            </div>
-            <div>
-                <button> Teste GRÁTIS </button>
-                <button> Matricular-se</button>
-            </div>
+          </div>
         </div>
-
-        <div> 
-            <img> <!-- img da plataforma -->
-        </div>
+      </div>
     </div>
-
-
-</div>
-<div> <!-- BLOCO https://getbootstrap.com/docs/5.2/examples/features/ --> 
-    <div> 
-        <div> <h1> POR QUE A BEELÍNGUE? </h1>
-        </div>
-        <div> <h4> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-            enim ipsam voluptatem quia </h4>
-        </div>
-    </div>
- 
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-    
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-</div>
-
-
-
-<div>
-    <div>
-        <h1>
-            LOREM IPSUM
-        </h1>
-    </div>
-    <div>
-        <div>
-            plano 1
-            <div> 
-                <button> teste GRATIS </button>
-            </div>
-        </div>
-        <div>
-            plano 2
-            <div> 
-                <button> R$75 </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div>
-    <footer>
-        <div>
-        <div>
-            <img> logo
-        </div>
-        <h3>
-            mnis iste natus error sit voluptatem accusantium
-doloremque laudantium, totam rem aperiam.
-        </h3>
- <div>
-    <h2> NOVAS BOLSAS DE ESTUDO </h2>
-    <div>
-        <form>
-            <input type="text" placeholder="email@exemplo.com">
-            <input type="submit" value="enviar">
-            </form>
-    </div>
- </div>
-    </div>
-<div>
-    <ul>
-        <li> <a > LOREM </a></li>
-        <li> <a > LOREM </a></li>
-        <li> <a > Suporte </a></li>
-    </ul>
-</div>
-    </footer>
-</div>
-
+  </section>
+ <!--Cadastro de aluno-->
 </body>
+
 </html>
