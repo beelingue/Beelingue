@@ -1,140 +1,169 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
+<html lang="pt-BR" dir="ltr">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Cadastro </title>
-    <link rel="stylesheet" href="assets/style.css">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-        crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-    <!-- Button com animação -->
-    <!--Fonte-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <!--Fonte-->
-</head>
+    <title> Beelingue Plataform </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+<!-- Side navbar-->
+  <div class="sidebar close">
+    <div class="logo-details">
+      <a class="navbar-brand"><img src="image/logos/logo abelha transp.png"
+      width="100%"
+      height="100%"
+      ></a>
+      <span class="logo_name">Beelíngue</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Módulos</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Módulos</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Módulos</a></li>
+          <li><a href="#">Eu</a></li>
+          <li><a href="#">Sei</a></li>
+          <li><a href="#">Lá</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-task' ></i>
+          <span class="link_name">Tarefas</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Tarefas</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-pie-chart-alt-2' ></i>
+            <span class="link_name">Estátisticas</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Estátisticas</a></li>
+          <li><a href="#">Depressão</a></li>
+          <li><a href="#">Caganeira</a></li>
+          <li><a href="#">TCC</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-chat' ></i>
+          <span class="link_name">Chat</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Chat</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-user'></i>
+          <span class="link_name">Usuário</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Usuário</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Configuração</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Configuração</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+        <img src="image/profile.jpg" alt="profileImg">
+      </div>
+      <div class="name-job">
+        <div class="profile_name">Sonic Judeu</div>
+        <div class="job">Aluno</div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+  <!-- Side navbar-->
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Modulos</span>
 
-<body style="background-color: #fecb37;">
+      <div class="content">
+        <!-- Modulo 1 -->
+        <div class="card one" value="Redirecionar sem Histórico" onclick="redirecioneComHistorico();">
+          <div class="top">
+            <div class="title">Modulo</div>
+            <div class="price-sec">
+              <span class="price">1</span>
+            </div>
+          </div>
+          <div class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel porta odio.
+             Duis vel nulla nec est sodales viverra quis et velit. Aenean sodales leo est, non tempus diam convallis nec. 
+             Donec nisi massa, consectetur at tincidunt accumsan, euismod ut tortor.</div>
+          <div class="details">
+            <div class="one">
+            </div>
+          </div>
+        </div>
 
-  <!--Cadastro de aluno-->
-  <section class="h-100">
-    <div class="container py-5 h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col">
-          <div class="card card-registration my-4">
-            <div class="row g-0">
-              <div class="col-xl-6 d-none d-xl-block">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
-                  alt="Sample photo" class="img-fluid"
-                  style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
-              </div>
-              <div class="col-xl-6">
-                <div class="card-body p-md-5 text-black">
-                  <h3 class="mb-5 text-uppercase">Cadastro de Aluno</h3>
-  
-                  <div class="row">
-                    <div class="col-md-6 mb-4">
-                      <div class="form-outline">
-                        <input type="text" id="form3Example1m" class="form-control form-control-lg" placeholder="Gabriel" />
-                        <label class="form-label" for="form3Example1m">Primeiro nome</label>
-                      </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                      <div class="form-outline">
-                        <input type="text" id="form3Example1n" class="form-control form-control-lg" placeholder="Scheamidt" />
-                        <label class="form-label" for="form3Example1n">Segundo nome</label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form-outline mb-4">
-                    <input type="text" id="form3Example8" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example8">Nome de Usuário</label>
-                  </div>
-  
-                  <div class="form-outline mb-4">
-                    <input type="text" id="form3Example8" class="form-control form-control-lg" placeholder="oscaralho@gmail.com" />
-                    <label class="form-label" for="form3Example8">Endereço de Email</label>
-                  </div>
-  
-                  <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
-  
-                    <h6 class="mb-0 me-4">Gender: </h6>
-  
-                    <div class="form-check form-check-inline mb-0 me-4">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
-                        value="option1" />
-                      <label class="form-check-label" for="femaleGender">Feminino</label>
-                    </div>
-  
-                    <div class="form-check form-check-inline mb-0 me-4">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
-                        value="option2" />
-                      <label class="form-check-label" for="maleGender">Masculino</label>
-                    </div>
-  
-                    <div class="form-check form-check-inline mb-0">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
-                        value="option3" />
-                      <label class="form-check-label" for="otherGender">Outro</label>
-                    </div>
-  
-                  </div>
-  
-                  <div class="row">
-                    <div class="col-md-6 mb-4">
-  
-                      <select class="form-select">
-                        <option value="1">Estado</option>
-                        <option value="2">sexo1</option>
-                        <option value="3">sexo2</option>
-                        <option value="4">sexo3</option>
-                      </select>
-  
-                    </div>
-                    <div class="col-md-6 mb-4">
-  
-                      <select class="form-select">
-                        <option value="1">Cidade</option>
-                        <option value="2">zap1</option>
-                        <option value="3">zap2</option>
-                        <option value="4">zap3</option>
-                      </select>
-  
-                    </div>
-                  </div>
-  
-                  <div class="form-outline mb-4">
-                    <input type="text" id="form3Example90" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example90">Senha</label>
-                  </div>
-  
-                  <div class="form-outline mb-4">
-                    <input type="text" id="form3Example99" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example99">Repita a senha</label>
-                  </div>
-
-                  <div class="d-flex justify-content-end pt-3">
-                    <button type="button" class="btn btn-outline-warning " href="paginadeapresentacao.html">Voltar</button>
-                    <a href="pagamento.html"><button type="button" class="btn btn-primary ms-2" >Proximo</button></a>
-                  </div>
-  
-                </div>
-              </div>
+        <!-- Modulo 2 -->
+        <div class="card two" value="Redirecionar sem Histórico" onclick="redirecioneComHistorico2();">
+          <div class="top">
+            <div class="title">Modulo</div>
+            <div class="price-sec">
+              <span class="price">2</span>
+            </div>
+          </div>
+          <div class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel porta odio.
+            Duis vel nulla nec est sodales viverra quis et velit. Aenean sodales leo est, non tempus diam convallis nec. 
+            Donec nisi massa, consectetur at tincidunt accumsan, euismod ut tortor.</div>
+          <div class="details">
+            <div class="one">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modulo 3 -->
+        <div class="card three" value="Redirecionar sem Histórico" onclick="redirecioneComHistorico3();">
+          <div class="top">
+            <div class="title">Modulo</div>
+            <div class="price-sec">
+              <span class="price">3</span>
+            </div>
+          </div>
+          <div class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel porta odio.
+            Duis vel nulla nec est sodales viverra quis et velit. Aenean sodales leo est, non tempus diam convallis nec. 
+            Donec nisi massa, consectetur at tincidunt accumsan, euismod ut tortor.</div>
+          <div class="details">
+            <div class="one">
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
- <!--Cadastro de aluno-->
+  <script src="script.js"></script>
 </body>
-
 </html>
