@@ -1,0 +1,144 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    background-color: white;
+    list-style: none;
+    margin: 50px;
+    padding-left:0;
+
+}
+
+.nav{
+    margin:0 auto;
+  width:100%;
+  height:auto;
+  display:inline-block;
+}
+.nav ul {
+    margin:0;
+    padding-left:50%;
+    padding-top: 1.5%;
+    list-style-type:none;
+    display:inline-block;
+ 
+  }
+  
+  .nav ul li {
+    position:relative;
+    margin:0 20px 0 0;
+    float:left;
+    display:inline-block;
+  }
+
+
+
+.dropdown{
+   position: absolute;
+   float: right;
+   margin: 10px;
+   
+}
+
+header{
+    padding: 10px;
+    
+}
+header img{ 
+    height: 45px;
+    width: 150px;
+    padding-left: 10%;
+}
+
+.col{
+    column-count: 2;
+    column-gap: 15%;
+    margin-left: 12%;
+    margin-right: 7%;
+    height: 500px;
+}
+.col img{
+size: 100px;
+padding: 2%;
+}
+
+.slogan{
+    margin-top: 29%;
+}
+
+.slogan h4{
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.button a {
+    margin-right: 10%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+
+    border-radius: 0.5rem;
+    color:black;
+}
+
+.button .teste-gratis{
+    background-color: #fecb37;
+}
+.button .matricula{
+    background-color: #427cba;
+}
+
+
+
+.title{
+    width: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+ text-align: center;
+ padding-top: 5%;
+ padding-bottom: 4%;
+}
+
+.title h1{
+    padding-bottom: 3%;
+}
+
+
+
+.col-b img{
+    width: 70px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.col-c{
+    background-color: violet;
+    height: 315px;
+    width: 55%;
+    border-radius: 0.5rem;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-d{
+    background-color: violet;
+    height: 315px;
+    width: 55%;
+    border-radius: 0.5rem;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-footer{
+    height: 45px;
+    width: 150px;
+}
