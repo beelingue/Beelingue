@@ -376,4 +376,48 @@ background: #fbd5d0;
     width: calc(100% - 78px);
   }
 }
+
+/*
+Estilo do hr nas páginas
+ESTILO PROVISÓRIO
+*/
+hr{
+  border: 0;
+  border-top: 2px dotted #8c8c8c;
+}
 /*Reponsividade*/
+
+/*
+CSS - Estatísticas
+*/
+
+#estatisticas{
+
+
+
+}
+
+/*
+Exibição
+*/
+/*
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+*/
+#table{
+
+  /*
+  A quebra de linha (word-wrap) começará após atingir uma largura de 450 px.
+  */
+  width: 450px;
+  overflow-wrap: break-word;  
+  word-wrap: break-word; 
+  word-break: break-word;
+  border-style: groove;
+  background-color: #f7cd14;
+
+}
