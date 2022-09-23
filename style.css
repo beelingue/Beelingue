@@ -1,5 +1,18 @@
 /* Google Fonts Import Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*
+Barra de progreso
+*/
+
+.barra_prog{
+  position: fixed;
+  z-index: 999;
+  height: 5px;
+  background:-webkit-linear-gradient(0deg,blue, #14ebc7);
+}
+
+
 /*Sidebar Navegação*/
 *{
   margin: 0;
@@ -215,6 +228,9 @@ body{
 .sidebar .profile-details .job{
   font-size: 12px;
 }
+
+/*Section*/
+
 .home-section{
   position: relative;
   background: #E4E9F7;
@@ -245,7 +261,10 @@ body{
 .home-section .home-content .text{
   font-size: 26px;
   font-weight: 600;
+  margin-top: 24px;
+
 }
+
 /*Sidebar Navegação*/
 /*Cards*/
 
@@ -388,28 +407,59 @@ hr{
 /*Reponsividade*/
 
 /*
-CSS - Estatísticas
+CSS - PÁGINA: Estatísticas
+
+IMPORTANTE:
+sections estão dando conflito
 */
 
-/*
+#config_icon{
+  cursor: pointer;
+  margin-left: 72px;
+  margin-right: 36px;
+  width: 32px;
+  height: 32px;
+}
+
+#edit_icon{
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
 #estatisticas{
 
+/*
+SOBRE AS GRIDS:
 
+Utilizei o "display: grid;" para poder dividir o conteúdo milimetricamente, permitindo maior controle dos elementos na página sem precisar do bootstrap a princípio.
+
+No entanto, como destaquei acima, as sections estão em conflito, e não posso tirar o máximo de proveito das grids por conta delas.
+*/  
+display: grid;
+grid-template-columns: auto auto auto;
+}
+
+#cont_table{
+
+margin-top: auto;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: auto;
+display: grid;
+}
+
+#cont_text{
+
+margin-top: auto;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: auto;
+text-align: justify;
 
 }
-*/
 
-/*
-Exibição
-*/
-/*
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-*/
+
 #table{
 
   /*
@@ -420,6 +470,70 @@ Exibição
   word-wrap: break-word; 
   word-break: break-word;
   border-style: groove;
-  background-color: #f7cd14;
+  display: grid;
 
+
+  /*Sombreamento*/
+  box-shadow: 6px 6px 2px gray;
+
+  /*Cor de fundo com opacidade (a opacidade é definida na última combinação numérica, aqui definida por: 0.4)*/
+  background-color: rgba(247, 205, 20, 0.4);
+  
+
+  padding: 24px;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+/*Gráfico de barras*/
+#barras{
+
+  cursor: pointer;
+
+  height: 324px;
+  width: 208px;
+
+  position: relative;
+
+  padding: 8px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
+#cont_itens{
+
+  text-align: center;
+  
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
+#cont_itens{
+
+  text-align: center;
+  
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
+#table_2{
+  width: 450px;
+  overflow-wrap: break-word;  
+  word-wrap: break-word; 
+  word-break: break-word;
+  border-style: groove;
+  display: grid;
+
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
 }

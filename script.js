@@ -27,3 +27,16 @@ console.log(sidebarBtn);
 sidebarBtn.addEventListener("click", ()=>{
   sidebar.classList.toggle("close");
 });
+
+//Barra de progresso
+$(document).ready(function(){
+  $(".barra_prog").css("width", window.pageYOffset + "%");
+  function map(currentA, maxA , maxB ){
+    return (currentA * maxB) / maxA;
+  }
+  //on scroll event
+  $(window).scroll(function(){
+    var pageMaxY = $(document).height() - $(window).height();
+    $(".barra_prog").css("width", map(window.pageYOffset, pageMaxY,100) + "%");
+  });
+});

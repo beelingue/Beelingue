@@ -19,7 +19,10 @@
 <body>
 
     <header>
-
+      <!--
+        Barra de progresso
+      -->
+      <div class="barra_prog"></div>
     </header>
 
     <main>
@@ -120,30 +123,56 @@
           </li>
         </ul>
           </div>
-          <section class="home-section">
-            <div class="home-content">
-              <i class='bx bx-menu' ></i>
-              <span class="text">Sua Atividade</span>
+
         <!--
             Fim da navbar
         -->
+
+        <!--
+          Section em conflito com as grids
+        -->
+        <section class="home-section">
+          <div class="home-content">
+            <i class='bx bx-menu'></i>
+            <span class="text">Sua Atividade</span>
+            <img src="img/estatisticas/ajustar.png" id="config_icon">
+            <img src="img/estatisticas/pen_colored.png" id="edit_icon">
+
+           
+
+            
+
 
         <!--
           Frequência do aluno
         -->
 
         <section id="estatisticas">
-          <article>
-            <p id="table">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorem, iusto reprehenderit enim voluptatibus ducimus nobis itaque, harum consequatur facilis labore porro, nihil quasi illo quos unde nam facere doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatum officiis molestias, ducimus quas obcaecati suscipit placeat quos eos cumque explicabo accusamus! Adipisci, distinctio laborum mollitia eum consequatur sapiente labore.
-              <hr>
-            </p>
-          </article>
+          <article id="cont_table">
+            <div id="cont_text">
+              <p id="table">
+
+                <!-- gráfico de barras (id= "barras") -->
+                <img src="img/estatisticas/exemplo_grafico_barras.png" id="barras">
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorem, iusto reprehenderit enim voluptatibus ducimus nobis itaque, harum consequatur facilis labore porro, nihil quasi illo quos unde nam facere doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatum officiis molestias, ducimus quas obcaecati suscipit placeat quos eos cumque explicabo accusamus! Adipisci, distinctio laborum mollitia eum consequatur sapiente labore.
+
+              </p>
+            </div>
+            <div id="cont_itens">
+              <p id="table_2">
+
+              </p>
+            </div>
         </section>
+
+        <hr>
+
 
         <!--
           Fim da frequência do aluno
         -->
+
     </main>
 
     <footer>
