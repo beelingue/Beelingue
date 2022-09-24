@@ -1,151 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-BR" dir="ltr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
-        <title>Tarefas</title>
 
-    <!--
-    Arquivo CSS
-    -->
-    <link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <title> Beelingue Tarefas </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
     <!-- Boxiocns CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-    </head>
+<body>
+    <!-- Side navbar-->
+    <div class="sidebar close">
+        <div class="logo-details">
+            <a class="navbar-brand"><img src="image/logos/logo abelha transp.png" width="100%" height="100%"></a>
+            <span class="logo_name">Beelíngue</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="modulos.html">Módulos</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="modulos.html">
+                        <i class='bx bx-collection'></i>
+                        <span class="link_name">Módulos</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="modulos.html">Módulos</a></li>
+                    <li><a href="#">Módulos 1</a></li>
+                    <li><a href="#">Módulos 2</a></li>
+                    <li><a href="#">Módulos 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="tarefas.html">
+                    <i class='bx bx-task'></i>
+                    <span class="link_name">Tarefas</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="tarefas.html">Tarefas</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="estatisticas.html">
+                        <i class='bx bx-pie-chart-alt-2'></i>
+                        <span class="link_name">Estátisticas</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="estatisticas.html">Estátisticas</a></li>
+                    <li><a href="#">Depressão</a></li>
+                    <li><a href="#">Caganeira</a></li>
+                    <li><a href="#">TCC</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="chat.html/">
+                    <i class='bx bx-chat'></i>
+                    <span class="link_name">Chat</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="chat.html/">Chat</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="usuario.html">
+                    <i class='bx bx-user'></i>
+                    <span class="link_name">Usuário</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="usuario.html">Usuário</a></li>
+                </ul>
+            </li>
 
-    <body>
-
-        <header>
-          <!--
-            Barra de progresso
-          -->
-          <div class="barra_prog"></div>
-        </header>
-
-        <main>
-            <header>
-
-            </header>
-        
-            <main>
-                <!--
-                    Side navbar
-                -->
-                <div class="sidebar close">
-                    <div class="logo-details">
-                      <a class="navbar-brand"><img src="image/logos/logo abelha transp.png"
-                      width="100%"
-                      height="100%"
-                      ></a>
-                      <span class="logo_name">Beelíngue</span>
-                    </div>
-                    <ul class="nav-links">
-                      <li>
-                        <ul class="sub-menu blank">
-                          <li><a class="link_name" href="index.html">Módulos</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <div class="iocn-link">
-                          <a href="index.html">
-                            <i class='bx bx-collection' ></i>
-                            <span class="link_name">Módulos</span>
-                          </a>
-                          <i class='bx bxs-chevron-down arrow'></i>
-                        </div>
-                        <ul class="sub-menu">
-                          <li><a class="link_name" href="index.html">Módulos</a></li>
-                          <li><a href="index.html">Módulo 1</a></li>
-                          <li><a href="index.html">Módulo 2</a></li>
-                          <li><a href="index.html">Módulo 3</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class='bx bx-task' ></i>
-                          <span class="link_name">Tarefas</span>
-                        </a>
-                        <ul class="sub-menu blank">
-                          <li><a class="link_name" href="#">Tarefas</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <div class="iocn-link">
-                          <a href="estatisticas.html">
-                            <i class='bx bx-pie-chart-alt-2' ></i>
-                            <span class="link_name">Estátisticas</span>
-                          </a>
-                          <i class='bx bxs-chevron-down arrow' ></i>
-                        </div>
-                        <ul class="sub-menu">
-                          <li><a class="link_name" href="estatisticas.html">Estátisticas</a></li>
-                          <li><a href="#">Depressão</a></li>
-                          <li><a href="#">Caganeira</a></li>
-                          <li><a href="#">TCC</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class='bx bx-chat' ></i>
-                          <span class="link_name">Chat</span>
-                        </a>
-                        <ul class="sub-menu blank">
-                          <li><a class="link_name" href="#">Chat</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="usuario.html">
-                          <i class='bx bx-user'></i>
-                          <span class="link_name">Usuário</span>
-                        </a>
-                        <ul class="sub-menu blank">
-                          <li><a class="link_name" href="usuario.html">Usuário</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class='bx bx-cog' ></i>
-                          <span class="link_name">Configuração</span>
-                        </a>
-                        <ul class="sub-menu blank">
-                          <li><a class="link_name" href="#">Configuração</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                    <div class="profile-details">
-                      <div class="profile-content">
+            <li>
+                <div class="profile-details">
+                    <div class="profile-content">
                         <img src="image/profile.jpg" alt="profileImg">
-                      </div>
-                      <div class="name-job">
+                    </div>
+                    <div class="name-job">
                         <div class="profile_name">Sonic Judeu</div>
                         <div class="job">Aluno</div>
-                      </div>
-                      <i class='bx bx-log-out' ></i>
                     </div>
-                  </li>
-                </ul>
-                  </div>
-                  <section class="home-section">
-                    <div class="home-content">
-                      <i class='bx bx-menu' ></i>
-                      
-                      <span class="text">Atribuições</span>
-                <!--
-                    Fim da navbar
-                -->
+                    <i class='bx bx-log-out'></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- Side navbar-->
+    <section class="home-section">
+        <div class="home-content">
+            <i class='bx bx-menu'></i>
+            <span class="text">Tarefas</span>
+            <div class="content">
+                <section class="dashboard">
+                    <div class="dash-content">
+                        <div class="overview">
+                            <div class="title">
+                                <i class="bx bx-task"></i>
+                                <span class="text">Atividades do Módulo 1</span>
+                            </div>
 
+                            <div class="boxes">
+                                <div class="box box1">
+                                    <i class="bx bx-lock-open-alt"></i>
+                                </div>
+                                <div class="box box2">
+                                    <i class="bx bx-lock-alt"></i>
+                                </div>
+                                <div class="box box3">
+                                    <i class="bx bx-lock-alt"></i>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <i class="bx bx-task"></i>
+                                <span class="text">Atividades do Módulo 2</span>
+                            </div>
 
+                            <div class="boxes">
+                                <div class="box box1">
+                                    <i class="bx bx-lock-open-alt"></i>
+                                </div>
+                                <div class="box box2">
+                                    <i class="bx bx-lock-alt"></i>
+                                </div>
+                                <div class="box box3">
+                                    <i class="bx bx-lock-alt"></i>
+                                    
+                                </div>
+                            </div>
+                            <div class="title">
+                                <i class="bx bx-task"></i>
+                                <span class="text">Atividades do Módulo 3</span>
+                            </div>
 
-        </main>
-
-        <footer>
-
-        </footer>
-
-        <script src="js/script.js"></script>
-    </body>
+                            <div class="boxes">
+                                <div class="box box1">
+                                    <i class="bx bx-lock-open-alt"></i>
+                                </div>
+                                <div class="box box2">
+                                    <i class="bx bx-lock-alt"></i>
+                                </div>
+                                <div class="box box3">
+                                    <i class="bx bx-lock-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            </div>
+    </section>
+    </section>
+    <script src="js/script.js"></script>
+</body>
 
 </html>

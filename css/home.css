@@ -1,0 +1,196 @@
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}
+
+/*Fontes*/
+p, h2, h1, h3, h4, h5, h6, span{
+    font-family:"Roboto", Verdana, Sans-serif;
+}
+
+
+/*Fontes*/
+/*Baackgrounds ( 　ﾟ,_ゝﾟ)*/
+main{
+    background-image: url("../img/ondas/azul.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 55%;
+}
+#secaoinicial {
+    background-color: #487cbc;
+}
+
+
+#waveplanos {
+    background-image: url("../img/ondas/amarelo.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 175%;
+}
+/*Backgrounds ( 　ﾟ,_ゝﾟ)*/
+
+/* Cor dos textos do footer*/
+.cortext {
+    color:#1d1d1b;
+  }
+  #cortext {
+    color: #1d1d1b
+  }
+/* Cor dos textos do footer*/
+
+/*Barra de Navegação*/
+  .navbar{
+    list-style-type: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    align-items: center;
+}
+/*Barra de Navegação*/
+
+/*Texto :3*/
+
+h1 {
+    text-align: center;
+}
+#justificado {
+    text-align: justify;
+}
+#centro {
+    text-align: center;
+}
+/*Texto :3*/
+
+/*Botões da Navegação*/
+.button1 {
+    border: 3px;
+    font-family:"Roboto", Verdana, Sans-serif;
+    border-radius: 12px;
+    color: black;
+    padding: 3px 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+/*Botão de Teste Grátis*/
+.buttonteste {
+    margin-left: 20%;
+    background-color: white;
+    color: #1d1d1b;
+    border: 2px solid #409cff;
+    padding: 6px 14px;
+}
+.buttonteste:hover {
+    background-color: #409cff;
+    color: #1d1d1b;
+}
+/*Botão de Teste Grátis*/
+
+/*Botão de Cadastrar-se do Apresentação Inicial*/
+.buttoncadastro {
+    position: relative;
+    background-color: white;
+    color: #1d1d1b;
+    border: 2px solid #FECB37;
+    padding: 6px 14px;
+}
+.buttoncadastro:hover {
+    background-color: #FECB37;
+    color: #1d1d1b;
+}
+
+.buttoncadastro1 {
+    position: relative;
+    background-color: white;
+    color: #1d1d1b;
+    border: 2px solid #FECB37;
+    padding: 6px 14px;
+    top: -10px;
+}
+.buttoncadastro1:hover {
+    background-color: #FECB37;
+    color: #1d1d1b;
+}
+/*Botão de Cadastrar-se do Apresentação Inicial*/
+
+.button2 {
+    background-color: white;
+    color: #1d1d1b;
+    border: 2px solid #FECB37;
+}
+.button2:hover {
+    background-color: #FECB37;
+    color: #1d1d1b;
+}
+/*Botões da Navegação*/
+
+/*Container da apresentação*/
+.container {
+    display: flex;
+}
+.wireframeimage {
+    object-fit: contain;
+    align-self: flex-start;
+}
+.containertext {
+    flex: 1 1
+}
+/*Container da apresentação*/
+
+/*Imagens da apresentação inicial*/
+.setting {
+    width: 50px;
+    height: 50px;
+}
+/*Imagens da apresentação inicial*/ 
+
+.col{
+    column-count: 2;
+    column-gap: 15%;
+    margin-left: 12%;
+    margin-right: 7%;
+    height: 500px;
+}
+.col img{
+    size: 100px;
+    padding: 2%;
+}
+
+.title{
+    width: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 4%;
+}
+
+.title h1{
+    padding-bottom: 3%;
+}
+
+/*Planos*/
+.col-c{
+    background-color: #ffbe42;
+    height: 400px;
+    width: 55%;
+    border-radius: 10px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col-c:hover{
+    box-shadow:  0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+    cursor: pointer;
+  }
+/*Planos*/
