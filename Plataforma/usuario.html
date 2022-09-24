@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Beelingue Usuário </title>
+    <link rel="stylesheet" href="/Plataforma/assets/style.css">
+    <link rel="stylesheet" href="/Plataforma/assets/style2.css">
+
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+<!-- Side navbar-->
+  <div class="sidebar close">
+    <div class="logo-details">
+      <a class="navbar-brand"><img src="image/logos/logo abelha transp.png"
+      width="100%"
+      height="100%"
+      ></a>
+      <span class="logo_name">Beelíngue</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="modulos.html">Módulos</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="modulos.html">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Módulos</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="modulos.html">Módulos</a></li>
+          <li><a href="#">Módulos 1</a></li>
+          <li><a href="#">Módulos 2</a></li>
+          <li><a href="#">Módulos 3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="tarefas.html">
+          <i class='bx bx-task' ></i>
+          <span class="link_name">Tarefas</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="tarefas.html">Tarefas</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="estatisticas.html">
+            <i class='bx bx-pie-chart-alt-2' ></i>
+            <span class="link_name">Estátisticas</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="estatisticas.html">Estátisticas</a></li>
+          <li><a href="#">Depressão</a></li>
+          <li><a href="#">Caganeira</a></li>
+          <li><a href="#">TCC</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="chat.html/">
+          <i class='bx bx-chat' ></i>
+          <span class="link_name">Chat</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="chat.html/">Chat</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="usuario.html">
+          <i class='bx bx-user'></i>
+          <span class="link_name">Usuário</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="usuario.html">Usuário</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+        <img src="image/profile.jpg" alt="profileImg">
+      </div>
+      <div class="name-job">
+        <div class="profile_name">Sonic Judeu</div>
+        <div class="job">Aluno</div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+  <!-- Side navbar-->
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Perfil</span>
+  <section class="dashboard">
+    <!--<img src="images/profile.jpg" alt="">-->
+
+
+<div class="dash-content">
+    <!--Perfil-->
+    <div class="activity">
+        <div class="title">
+            <i class="bx bxs-user"></i>
+            <span class="text">Perfil</span>
+        </div>
+        <div class="container">
+            <form action="#">
+                <div class="form first">
+                    <div class="details personal">
+                        <span class="title">Detalhes pessoais</span>
+                        <br>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Nome Completo</label>
+                                <input type="text" placeholder="Andre Santana" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Data de Nascimento</label>
+                                <input type="date" placeholder="" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Email</label>
+                                <input type="text" placeholder="alcatrafilemion@gmail.com" required>
+                            </div>
+
+                            <button class="sumbit">
+                                <span class="btnText">Confirmar alterações</span>
+                                <i class="uil uil-navigator"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!--Conta-->
+            <div class="activity">
+                <div class="title">
+                    <i class="bx bxs-user-account"></i>
+                    <span class="text">Conta</span>
+                </div>
+                <div class="container">
+                    <form action="#">
+                        <div class="form first">
+                            <div class="details personal">
+                                <span class="title">Configuração da conta</span>
+                                <div class="fields">
+                                    <div class="input-field">
+                                        <label>Nome de Usuário</label>
+                                        <input type="text" placeholder="ferdinando23" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="sumbit">
+                            <span class="btnText">Confirmar alterações</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </form>
+                </div>
+                    <div class="activity">
+                        <div class="title">
+                            <i class="bx bxs-lock-alt"></i>
+                            <span class="text">Segurança</span>
+                        </div>
+                        <div class="container">
+                            <form action="#">
+                                <div class="form first">
+                                    <div class="details personal">
+                                        <span class="title">Configuração de segurança</span>
+                                        <span class="title"> Trocar a senha</span>
+                                        <div class="fields">
+                                            <div class="input-field">
+                                                <input type="text" placeholder="Senha Antiga" required>
+                                            </div>
+                                            <div class="input-field">
+                                                <input type="text" placeholder="Nova Senha" required>
+                                            </div>
+                                            <div class="input-field">
+                                                <input type="text" placeholder="Confirme a Nova Senha" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="sumbit">
+                                    <span class="btnText">Confirmar alterações</span>
+                                    <i class="uil uil-navigator"></i>
+                                </button>
+                            </form>
+                        </div>
+                            <div class="activity">
+                                <div class="title">
+                                    <i class="bx bxs-credit-card"></i>
+                                    <span class="text">Pagamento</span>
+                                </div>
+                                <div class="container">
+                                    <form action="#">
+                                        <div class="form first">
+                                            <div class="details personal">
+                                                <span class="title">Metodo de Pagamento</span>
+                                                <h5>Você não adicionou um metódo de pagamento</h5>
+                                            </div>
+                                        </div>
+                                        <button class="sumbit">
+                                            <span class="btnText">Adicionar método de pagamento</span>
+                                            <i class="uil uil-navigator"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+  <script src="/Plataforma/assets/script.js"></script>
+</body>
+</html>
