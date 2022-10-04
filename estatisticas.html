@@ -4,12 +4,13 @@
 <head>
 
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <title> Estatísticas </title>
 <!--
     Arquivo CSS
 -->
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style2.css">
 <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
 <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,12 +60,12 @@
                 </ul>
               </li>
               <li>
-                <a href="#">
+                <a href="tarefas.html">
                   <i class='bx bx-task' ></i>
                   <span class="link_name">Tarefas</span>
                 </a>
                 <ul class="sub-menu blank">
-                  <li><a class="link_name" href="#">Tarefas</a></li>
+                  <li><a class="link_name" href="tarefas.html">Tarefas</a></li>
                 </ul>
               </li>
               <li>
@@ -77,18 +78,18 @@
                 </div>
                 <ul class="sub-menu">
                   <li><a class="link_name" href="estatisticas.html">Estátisticas</a></li>
-                  <li><a href="#">Depressão</a></li>
-                  <li><a href="#">Caganeira</a></li>
-                  <li><a href="#">TCC</a></li>
+                  <li><a href="#">Alunos</a></li>
+                  <li><a href="#">Turmas</a></li>
+                  <li><a href="#">Outros</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#">
-                  <i class='bx bx-chat' ></i>
+                <a href="chat.html">
+                  <i class='bx bx-chat'></i>
                   <span class="link_name">Chat</span>
                 </a>
                 <ul class="sub-menu blank">
-                  <li><a class="link_name" href="#">Chat</a></li>
+                  <li><a class="link_name" href="chat.html">Chat</a></li>
                 </ul>
               </li>
               <li>
@@ -101,24 +102,15 @@
                 </ul>
               </li>
               <li>
-                <a href="#">
-                  <i class='bx bx-cog' ></i>
-                  <span class="link_name">Configuração</span>
-                </a>
-                <ul class="sub-menu blank">
-                  <li><a class="link_name" href="#">Configuração</a></li>
-                </ul>
-              </li>
-              <li>
             <div class="profile-details">
               <div class="profile-content">
                 <img src="image/profile.jpg" alt="profileImg">
               </div>
               <div class="name-job">
-                <div class="profile_name">Sonic Judeu</div>
+                <div class="profile_name">Luiz Marques</div>
                 <div class="job">Aluno</div>
               </div>
-              <i class='bx bx-log-out' ></i>
+              <i class='bx bx-log-out'></i>
             </div>
           </li>
         </ul>
@@ -137,6 +129,7 @@
             <span class="text">Sua Atividade</span>
             <img src="img/estatisticas/ajustar.png" id="config_icon">
             <img src="img/estatisticas/pen_colored.png" id="edit_icon">
+          </div>
 
            
 
@@ -149,6 +142,7 @@
 
         <section id="estatisticas">
           <article id="cont_table">
+            <h2 id="identificador_estat">Aluno/Turma: </h2>
             <div id="cont_text">
               <p id="table">
 
@@ -159,11 +153,14 @@
 
               </p>
             </div>
+            <!--
             <div id="cont_itens">
               <p id="table_2">
 
               </p>
             </div>
+            -->
+          </article>
         </section>
 
         <hr>

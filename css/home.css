@@ -60,9 +60,14 @@ h1 {
 #justificado {
     text-align: justify;
 }
-#centro {
+#centro1 {
     text-align: center;
 }
+
+#centro2{
+    text-align: center;
+}
+
 /*Texto :3*/
 
 /*Botões da Navegação*/
