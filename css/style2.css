@@ -269,7 +269,6 @@ overflow: auto;
 body{
     min-height: 100vh;
 }
-/* === Custom Scroll Bar CSS === */
 ::-webkit-scrollbar {
     width: 8px;
 }

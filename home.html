@@ -29,7 +29,7 @@
     <nav class="navbar navbar-expand navbar-light ">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="img/logo/logosite.png" width="140" height="40" class="d-inline-block align-top" alt="logo">
+          <img src="img/logo/logosite.png" width="140" height="40" class="d-inline-block align-top" alt="logo da plataforma">
           <!--Logo imagem-->
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -71,20 +71,18 @@
       <div class="container">
 
         <div class="containertext">
-          <br>
-          <br>
-          <br>
-          <div id="justificado">
-            <h2>APRESENTAÇÕES FODAS DIGDIM</h2>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quam diam, tempor et tellus eu,
-              ultricies malesuada lorem. Morbi tincidunt purus eu magna pulvinar efficitur. Nulla vel purus sit amet
-              lectus mattis mollis. Mauris faucibus diam at ornare congue.</h4>
-          </div>
-          <br>
-          <A href="login.html"><button class="button1 buttonteste">Teste Grátis</button></A>
-          <a href="cadastro.html"><button class="button1 buttoncadastro">Cadastrar-se</button></a>
+            <h2 id="titulo_apresent">WELCOME</h2>
+            <h4>Com a Beelíngue, professores e instituições terão acesso a maneira mais simples e eficaz de gerenciar aulas de inglês!</h4>
+            <div class="containerbutton">
+              <a href="login.html"><button class="button1 buttonteste">Teste Grátis</button></a>
+              
+              <a href="cadastro.html"><button class="button1 buttoncadastro">Cadastrar-se</button></a>
+            </div>
         </div>
-        <img src="img/apresentacaoinicial.png" class="wireframeimage" alt="imagem">
+
+        <div class="containerimg">
+          <img src="img/smartphone_display.png" id="tela_mobile" alt="beelíngue em plataforma mobile">
+        </div>
       </div>
     </section>
     <!--apresentação inicial-->
@@ -93,21 +91,14 @@
     <section>
       <div id="waveplanos">
         <div class="title">
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
+
           <h1> POR QUE A BEELÍNGUE? </h1>
           <h4 id="centro1"> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit enim ipsam
             voluptatem quia </h4>
         </div>
         <div class="col">
           <div class="col-b">
-            <div> <img src="img/Communication/settings.png" class="setting" alt="icone"> </div>
+            <div> <img src="img/Communication/settings.png" class="setting" alt="ícone de configurações"> </div>
             <h2>
               Finibus Bonorum
             </h2>
@@ -120,7 +111,7 @@
           </div>
 
           <div class="col-b">
-            <div> <img src="img/Communication/settings.png" class="setting" alt="icone"> </div>
+            <div> <img src="img/Communication/settings.png" class="setting" alt="ícone de configurações"> </div>
             <h2>
               Finibus Bonorum
             </h2>
@@ -132,7 +123,7 @@
           </div>
 
           <div class="col-b">
-            <div> <img src="img/Communication/settings.png" class="setting" alt="icone"> </div>
+            <div> <img src="img/Communication/settings.png" class="setting" alt="ícone de configurações"> </div>
             <h2>
               Finibus Bonorum
             </h2>
@@ -144,7 +135,7 @@
           </div>
 
           <div class="col-b">
-            <div> <img src="img/Communication/settings.png" class="setting" alt="icone"> </div>
+            <div> <img src="img/Communication/settings.png" class="setting" alt="ícone de configurações"> </div>
             <h2>
               Finibus Bonorum
             </h2>
@@ -156,7 +147,7 @@
           </div>
 
           <div class="col-b">
-            <div> <img src="img/Communication/settings.png" class="setting" alt="icone"> </div>
+            <div> <img src="img/Communication/settings.png" class="setting" alt="ícone de configurações"> </div>
             <h2>
               Finibus Bonorum
             </h2>
@@ -168,7 +159,7 @@
           </div>
 
           <div class="col-b">
-            <div> <img src="img/Communication/settings.png" class="setting" alt="icone"> </div>
+            <div> <img src="img/Communication/settings.png" class="setting" alt="ícone de configurações"> </div>
             <h2>
               Finibus Bonorum
             </h2>
@@ -199,14 +190,14 @@
       <div>
         <div class="title">
           <h1>
-            PLANOS
+            PLANOS:
           </h1>
         </div>
 
         <div class="col">
           <div class="col-c">
             <br>
-            <h4 id="centro2">Plano basico</h4>
+            <h4 id="centro2">Plano Básico</h4>
             <ul>
               <br>
               <li> lorem </li>
@@ -221,12 +212,12 @@
             <br>
             <br>
             <br>
-            <h5><center>Teste Grátis</center></h5>
+            <h5 id="titulo_centralizado">Teste Grátis</h5>
           </div>
 
           <div class="col-c">
             <br>
-            <h4><center>Plano avançado</center></h4>
+            <h4><center>Plano Avançado</center></h4>
             <ul>
               <br>
               <li> lorem </li>
@@ -243,7 +234,7 @@
             <br>
             <br>
             <br>
-            <h5><center>Cadastrar-se</center></h5>
+            <h5 id="titulo_centralizado">Cadastrar-se</h5>
           </div>
         </div>
 
@@ -260,18 +251,18 @@
       <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <!-- Left -->
         <div class="me-5 d-none d-lg-block">
-          <span class="cortext">Nos siga nas redes sociais:</span>
+          <span class="cortext">Nossas redes sociais:</span>
         </div>
         <!-- /Left -->
 
         <!-- Right -->
         <div>
           <a href="" class="me-4 text-reset">
-            <img src="img/brands/facebook.png"></a>
+            <img src="img/brands/facebook.png" alt="ícone do facebook"></a>
           <a href="" class="me-4 text-reset">
-            <img src="img/brands/instagram.png"></a>
+            <img src="img/brands/instagram.png" alt="ícone do instagram"></a>
           <a href="" class="me-4 text-reset">
-            <img src="img/brands/twitter.png"></a>
+            <img src="img/brands/twitter.png" alt="ícone do twitter"></a>
         </div>
         <!-- /Right -->
       </section>
@@ -320,7 +311,7 @@
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
             <h6 class="text-uppercase fw-bold mb-4" id="cortext">
-              <i class="fas fa-gem me-3"></i>BEELINGUE
+              <i class="fas fa-gem me-3"></i>BEELÍNGUE
             </h6>
             <p id="cortext">
               "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
@@ -355,10 +346,10 @@
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" id="cortext">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">Contatos</h6>
-            <p><img src="img/User Interface/House.png">Praia Grande, 2222, SP</p>
-            <p><img src="img/Communication/message.png">belingue@email.com</p>
-            <p><img src="img/Communication/call.png">+13 12345-6789</p>
-            <p><img src="img/Communication/call.png">+13 12345-6789</p>
+            <p><img src="img/User Interface/House.png" alt="ícone de endereço">Praia Grande, 2222, SP</p>
+            <p><img src="img/Communication/message.png" alt="ícone de e-mail">belingue@email.com</p>
+            <p><img src="img/Communication/call.png" alt="ícone de telefone">+13 12345-6789</p>
+            <p><img src="img/Communication/call.png" alt="ícone de telefone">+13 12345-6789</p>
           </div>
           <!-- Grid column -->
         </div>
@@ -369,7 +360,7 @@
 
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);" id="cortext">
-      © 2021 Copyright:
+      © 2022 Copyright:
       <a class="text-reset fw-bold" href="https://beelingue.com/">Beelingue.com</a>
     </div>
     <!-- Copyright -->
