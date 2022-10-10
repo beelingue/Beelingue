@@ -33,6 +33,8 @@ body{
 
 ::-webkit-scrollbar-thumb:hover {
     background: #fbc31b;
+
+    display: flex;
 }
 
 /*Fontes*/
@@ -48,7 +50,8 @@ Ao passar o código no W3C validator, foi constatado que a tag "center" (HTML) �
     text-align: center;
     margin-left: 30px;
     margin-right: 30px;
-    border: 1px solid #1d1d1b;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     font-weight: bold;
 }
 
@@ -56,18 +59,18 @@ Ao passar o código no W3C validator, foi constatado que a tag "center" (HTML) �
 /*Fontes*/
 /*Baackgrounds ( 　ﾟ,_ゝﾟ)*/
 
-
-/*main{
-    background-image: url("../img/ondas/azul.svg");
-    background-repeat: no-repeat;
-    background-size: 100% 55%;
-}*/
      
 #secaoinicial {
     background-color: #427CBA;
+    position: relative;
     background-repeat: no-repeat;
-    width: 1366px;
-    height: 516px;
+    background-size: cover;
+    overflow: hidden;
+    width: auto;
+    height: 548px;
+    /*
+    divisão dos elementos em grid, semelhante às div's do bootstrap
+    */
     display: grid;
     grid-template-columns: auto auto auto;
 }
@@ -77,6 +80,29 @@ Ao passar o código no W3C validator, foi constatado que a tag "center" (HTML) �
     background-repeat: no-repeat;
     background-size: 100% 175%;
 }
+
+/*
+ELEMENTO: "POR QUE A BEELINGUE?"
+*/
+#titulo_pq{
+    color:#409cff;
+    text-shadow: #5b5b5c 1px 2.5px;
+    font-weight: lighter;
+    text-align: center;
+
+}
+
+/*
+ELEMENTO: "PLANOS:"
+*/
+#tit_planos{
+    color: #1d1d1b;
+    text-shadow: #7c651f 1px 2.5px;
+    font-weight: lighter;
+    text-align: center;
+
+}
+
 /*Backgrounds ( 　ﾟ,_ゝﾟ)*/
 
 /* Cor dos textos do footer*/
@@ -84,7 +110,7 @@ Ao passar o código no W3C validator, foi constatado que a tag "center" (HTML) �
     color:#1d1d1b;
   }
 #cortext {
-    color: #1d1d1b
+    color: #1d1d1b;
   }
 /* Cor dos textos do footer*/
 
@@ -103,9 +129,6 @@ Ao passar o código no W3C validator, foi constatado que a tag "center" (HTML) �
 
 /*Texto :3*/
 
-h1 {
-    text-align: center;
-}
 #centro1 {
     text-align: center;
 }
@@ -200,11 +223,13 @@ h1 {
 #titulo_apresent{
     font-weight: bolder;
     margin: auto;
+    padding-top: 56px;
     padding-bottom: 24px;
 }
 
 .containerbutton{
     text-align: center;
+    position: initial;
     padding: 24px;
     height: min-content;
 }
@@ -243,14 +268,39 @@ h1 {
 }
 
 .title{
-    width: 50%;
+    width: auto;
+    position: relative;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 96px;
+    padding-bottom: 56px;
+    margin-left: 366px;
+    margin-right: 366px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+hr.hr-1{
+    border: 0;
+    border-top: 3px double #427CBA;
+}
+
+hr.hr-2{
+    height: 10px;
+    border: 0;
+    margin:0px;
+    box-shadow: 0px 12px 15px -10px #427CBA inset;
+}
+
+.title2{
+    width: auto;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     padding-top: 5%;
-    padding-bottom: 4%;
-}
+    padding-bottom: 3%;
+  }
 
 .title h1{
     padding-bottom: 3%;
