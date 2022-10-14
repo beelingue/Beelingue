@@ -12,16 +12,10 @@
 }
 
 
-.menu li button {
-border-color: #FECB37;
-    display: block;
-    background:#FECB37;
-
-}
 
 
-.menu li button:hover{
- 
+
+.button-y:hover{
     -moz-box-shadow:0 3px 10px 0 #CCC; 
     -webkit-box-shadow:0 3px 10px 0 #ccc; 
     text-shadow:0px 0px 5px #fff; 
@@ -55,8 +49,8 @@ border-color: #FECB37;
     
 
 /* main*/
-.container2{
 
+.container2{
     column-count: 2;
     column-gap: 40px;
 
@@ -73,4 +67,15 @@ column-gap: 30px;
     width: 100%;
     text-align: center;
     font-size: 18px;
+}
+
+.button-y{
+    background-color: #FECB37; 
+    border: none;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
 }
