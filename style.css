@@ -168,7 +168,7 @@ margin-top: 60px;
 .item-col{
     padding: 10px;
    border-radius: 5%;
-   background-color: var(--cor-cinza);
+   /*background-color: var(--cor-cinza);*/
     border: 0.5px ;
     margin: 5px;
 height: 225px;
@@ -247,5 +247,8 @@ padding-bottom: 25px;
 }
 
 
-
+hr{
+    width: 50%;
+    margin-bottom: 35px;
+}
 
