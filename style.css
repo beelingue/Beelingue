@@ -8,7 +8,9 @@
 
 .menu {
     list-style: none;
-
+margin: 5px;
+font-family:Arial, Helvetica, sans-serif;
+font-size: 15px;
 }
 
 .menu li {
@@ -48,6 +50,7 @@ border-color: #FECB37;
  .img{
         display: inline-block;
         margin-right: 8%;
+margin-left: 8%;
     }
 
 .header{
@@ -65,13 +68,14 @@ border-color: #FECB37;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    font-family:Arial, Helvetica, sans-serif;
     }
 
 .container3{
     column-count: 3;
     column-gap: 25px;
     width: 75%;
-
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -84,6 +88,7 @@ border-color: #FECB37;
     width: 100%;
     text-align: center;
     font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .button-y{
@@ -95,7 +100,7 @@ border-color: #FECB37;
     text-decoration: none;
     display: inline-block;
     font-size: 12px;
-
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .button-y:hover, .button-y:focus{
@@ -106,7 +111,7 @@ border-color: #FECB37;
 
 
 .plano{
-
+    font-family:Arial, Helvetica, sans-serif;
     border: 0.5px solid black;
     width: 250px;
     height: 300px;
@@ -151,6 +156,8 @@ margin-top: 60px;
 .section-main{
 background-color: var(--cor-azul);
 width: 100%;
+padding-top: 40px;
+padding-bottom: 40px;
 }
 
 .geeks {
@@ -192,4 +199,13 @@ footer {
 height: 150px;
 padding-top: 25px;
 padding-bottom: 25px;
+}
+
+.meio{
+    position: relative;
+    left: 0;
+    top: 25%;
+    width: 100%;
+
+    
 }
