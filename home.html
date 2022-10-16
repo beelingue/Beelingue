@@ -67,19 +67,15 @@
   <main>
     <!--apresentação inicial-->
     <section id="secaoinicial">
-
       <div class="container">
-
         <div class="containertext">
             <h2 id="titulo_apresent">WELCOME</h2>
             <h4>Com a Beelíngue, professores e instituições terão acesso a maneira mais simples e eficaz de gerenciar aulas de inglês!</h4>
             <div class="containerbutton">
               <a href="login.html"><button class="button1 buttonteste">Teste Grátis</button></a>
-              
               <a href="cadastro.html"><button class="button1 buttoncadastro">Cadastrar-se</button></a>
             </div>
         </div>
-
         <div class="containerimg">
           <img src="img/smartphone_display.png" id="tela_mobile" alt="beelíngue em plataforma mobile">
         </div>
@@ -88,9 +84,11 @@
     <!--apresentação inicial-->
 
     <!--Argumentação-->
-    <section>
+    <section id="parallax">
+      <!--
+        SOMBREAMENTO DO FUNDO AZUL
+      -->
       <hr class="hr-2">
-      <div id="waveplanos">
         <div class="title">
           <hr class="hr-1">
           <h1 id="titulo_pq"> POR QUE A BEELÍNGUE? </h1>
@@ -101,7 +99,7 @@
         <div class="col">
           <div class="col-b">
             <div> <img src="img/Communication/settings.png" class="setting" alt="ícone de configurações"> </div>
-            <h2>
+            <h2 class="lines">
               Finibus Bonorum
             </h2>
             <p>
@@ -114,7 +112,7 @@
 
           <div class="col-b">
             <div> <img src="img/Communication/settings.png" class="setting" alt="ícone de configurações"> </div>
-            <h2>
+            <h2 class="lines">
               Finibus Bonorum
             </h2>
             <p>
@@ -126,7 +124,7 @@
 
           <div class="col-b">
             <div> <img src="img/Communication/settings.png" class="setting" alt="ícone de configurações"> </div>
-            <h2>
+            <h2 clas="lines">
               Finibus Bonorum
             </h2>
             <p>
@@ -138,7 +136,7 @@
 
           <div class="col-b">
             <div> <img src="img/Communication/settings.png" class="setting" alt="ícone de configurações"> </div>
-            <h2>
+            <h2 class="lines">
               Finibus Bonorum
             </h2>
             <p>
@@ -150,7 +148,7 @@
 
           <div class="col-b">
             <div> <img src="img/Communication/settings.png" class="setting" alt="ícone de configurações"> </div>
-            <h2>
+            <h2 class="lines">
               Finibus Bonorum
             </h2>
             <p>
@@ -162,7 +160,7 @@
 
           <div class="col-b">
             <div> <img src="img/Communication/settings.png" class="setting" alt="ícone de configurações"> </div>
-            <h2>
+            <h2 class="lines">
               Finibus Bonorum
             </h2>
             <p>
@@ -172,82 +170,43 @@
             </p>
           </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-      </div>
     </section>
 
     <!--Argumentação-->
 
     <!--Planos-->
 
-    <section style="background-color: #fecb37;">
+    <section id="mkt_sec" style="background-color: #fecb37;">
 
-      <div>
-        <div class="title2">
-          <h1 id="tit_planos">
+        <div class="tit_planos">
+          <h1 id="title2">
             PLANOS:
           </h1>
         </div>
 
-        <div class="col">
-          <div class="col-c">
-            <br>
-            <h4 id="centro2">Plano Básico</h4>
-            <ul>
-              <br>
-              <li> lorem </li>
-              <br>
-              <li> lorem </li>
-              <br>
-              <li> lorem </li>
-              <br>
-              <li> lorem </li>
-            </ul>
-            <a href="#"></a>
-            <br>
-            <br>
-            <br>
-            <h5 id="titulo_centralizado">Teste Grátis<hr></h5>
+        <!--
+        CARDS QUE MOSTRAM OS BENEFÍCIOS DE CADA PLANO
+        -->
+        
+        <div id="promo_card">
+
+          <div id="card01">
+
+          </div>
+          <div id="card02">
+
           </div>
 
-          <div class="col-c">
-            <br>
-            <h4 id="centro2">Plano Avançado</h4>
-            <ul>
-              <br>
-              <li> lorem </li>
-              <br>
-              <li> lorem </li>
-              <br>
-              <li> lorem </li>
-              <br>
-              <li> lorem </li>
-            </ul>
-            <!--Colocar um caminho para os planos-->
-            <a href="#"></a> <!-- viola regras de aninhamento-->
-            <!--Colocar um caminho para os planos-->
-            <br>
-            <br>
-            <br>
-            <h5 id="titulo_centralizado">Cadastrar-se<hr></h5>
-          </div>
         </div>
+        
 
-      </div>
     </section>
     <!--Planos-->
   </main>
 
 
   <!-- Footer -->
-  <footer class="text-center text-lg-start text-muted" style="background-color: #ffdb6e;" id="rodape">
+  <footer class="text-center text-lg-start text-muted" style="background-color: #ffe8a4;" id="rodape">
     <!-- Section: Social media -->
     <div>
       <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
@@ -272,8 +231,7 @@
     
     <!-- Section: Social media -->
     <section class="">
-      <br>
-      <form action="">
+      <form action="" id="footer_ini">
         <!--Grid row-->
         <div class="row d-flex justify-content-center">
           <!--Grid column-->
@@ -288,8 +246,9 @@
           <div class="col-md-5 col-12">
             <!-- Email input -->
             <div class="form-outline form-white mb-4">
-              <input type="email" id="form5Example21" class="form-control" />
-              <label class="form-label" for="form5Example21" id="cortext">Endereço de Email</label>
+
+              <input type="email" id="form5Example21" class="form-control"/>
+              
             </div>
           </div>
           <!--Grid column-->
@@ -304,9 +263,9 @@
         <!--Grid row-->
       </form>
     </section>
-    <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
+
+    <section id="footer_end">
+      <div class="container text-center text-md-start mt-5"  style="opacity: 0.8;">
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
@@ -330,15 +289,27 @@
               EMPRESA
             </h6>
             <p>
+              <!--
+                FALTA LINK!
+              -->
               <a href="#!" class="text-reset">Sobre nós</a>
             </p>
             <p>
+              <!--
+                FALTA LINK!
+              -->
               <a href="#!" class="text-reset">Termos de Uso</a>
             </p>
             <p>
+              <!--
+                FALTA LINK!
+              -->
               <a href="#!" class="text-reset">Política de Privacidade</a>
             </p>
             <p>
+              <!--
+                FALTA LINK!
+              -->
               <a href="#!" class="text-reset">Trabalhe Conosco</a>
             </p>
           </div>
@@ -361,9 +332,9 @@
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: #ffe8a4;" id="cortext">
+    <div class="text-center p-4" style="background-color: #fcfcfc;" id="cortext">
       © 2022 Copyright:
-      <a class="text-reset fw-bold" href="home.html">Beelíngue</a>
+      <a class="text-reset fw-bold" href="home.html" style="opacity: 0.8;">Beelíngue</a>
     </div>
     <!-- Copyright -->
   </footer>
