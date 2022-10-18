@@ -1,5 +1,15 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    -webkit-font-smoothing: antialiased;
+    overflow: auto;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
@@ -13,12 +23,6 @@
 /*
 RESPONSIVIDADE E ANTI-ALIASING
 */
-
-body{
-    height: 100vh;
-    width: 100vw;
-    -webkit-font-smoothing: antialiased;
-}
 
 :root{
     /* ===== Colors ===== */
@@ -51,18 +55,13 @@ BARRA DE ROLAGEM COM IDENTIDADE VISUAL
     display: flex;
 }
 
-/*Fontes*/
-p, h2, h1, h3, h4, h5, h6, span{
-    font-family:"Roboto", Verdana, Sans-serif;
-}
-
 /*Barra superior*/
 .navbar{
     list-style-type: none;
     position: relative;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+
     background-color: rgba(255, 255, 255, 0);
     display: flex;
     align-items: center;
@@ -71,16 +70,38 @@ p, h2, h1, h3, h4, h5, h6, span{
 /*Botões da Navegação*/
 .button1 {
     border: 3px;
-    font-family:"Roboto", Verdana, Sans-serif;
-    border-radius: 12px;
+    border-radius: 12px;    
     color: black;
-    padding: 3px 10px;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    
     transition-duration: 0.4s;
     cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.btn_compra {
+    border: 3px;
+    border-radius: 12px;    
+    color: black;
+    font-size: 16px;
+    
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 #secaoinicial {
@@ -89,49 +110,80 @@ p, h2, h1, h3, h4, h5, h6, span{
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    width: auto;
-    height: 90%;
-    min-height: 540px;
-    max-height: 768px;
+    width: 100%;
+    height: 100%;
     /*
     divisão dos elementos em grid, semelhante às div's do bootstrap
     */
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    
 }
 
 /*Container da apresentação*/
 .container {
+    width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     /*
     espaçamento entre colunas
     */
-    column-gap: 16px;
+    column-gap: 1.4%;
     /*
     espaçamento entre linhas
     */
-    row-gap: 8px;
-    margin: auto;
-    padding: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
 }
 .containertext {
-    text-decoration: none;
-    text-align:left;
+    width: 55%;
+    height: auto;
+    text-align: left;
     color: #f1f1f1;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    /*padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 1.4%;
+    margin-bottom: 1.4%;*/
 }
 
 #titulo_apresent{
-    text-decoration: none;
     font-weight: bolder;
-    margin: auto;
-    padding-top: 56px;
-    padding-bottom: 24px;
+    padding-top: 1.4%;
+    padding-bottom: 8.4%;
+    text-align: left;
+
     height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 .containerbutton{
-    text-decoration: none;
     text-align: center;
     position: initial;
     padding: 24px;
@@ -140,8 +192,14 @@ p, h2, h1, h3, h4, h5, h6, span{
 
 .containerimg{
     text-decoration: none;
-    text-align: center;
-    padding: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 #tela_mobile{
