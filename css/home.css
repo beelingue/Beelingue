@@ -10,6 +10,18 @@ body{
     width: 100vw;
     -webkit-font-smoothing: antialiased;
     overflow: auto;
+    line-height: 1.4vh;
+}
+
+p{
+    margin-bottom:0;
+}
+
+/*
+ESPAÇAMENTO DE LETRAS PARA TÍTULOS NO SITE
+*/
+h1, h2{
+    letter-spacing: 0.9vh;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
@@ -131,15 +143,12 @@ BARRA DE ROLAGEM COM IDENTIDADE VISUAL
 /*Container da apresentação*/
 .container {
     width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: auto auto;
-    /*
-    espaçamento entre colunas
-    */
     column-gap: 1.4%;
-    /*
-    espaçamento entre linhas
-    */
+    row-gap: 1.4%;
+
     margin-top: auto;
     margin-bottom: auto;
     padding-top: auto;
@@ -154,18 +163,15 @@ BARRA DE ROLAGEM COM IDENTIDADE VISUAL
     height: auto;
     text-align: left;
     color: #f1f1f1;
+
     margin-top: auto;
     margin-bottom: auto;
-    padding-top: auto;
-    padding-bottom: auto;
+    padding-top: 8%;
+    padding-bottom: 8%;
     margin-left: auto;
     margin-right: auto;
     padding-left: auto;
     padding-right: auto;
-    /*padding-left: 20%;
-    padding-right: 20%;
-    margin-top: 1.4%;
-    margin-bottom: 1.4%;*/
 }
 
 #titulo_apresent{
@@ -191,6 +197,9 @@ BARRA DE ROLAGEM COM IDENTIDADE VISUAL
 }
 
 .containerimg{
+    width: auto;
+    height: auto;
+
     text-decoration: none;
     margin-top: auto;
     margin-bottom: auto;
@@ -198,17 +207,24 @@ BARRA DE ROLAGEM COM IDENTIDADE VISUAL
     padding-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 #tela_mobile{
-    margin:auto;
-    padding: auto;
-    width: fit-content;
-    height: 50%;
-    min-height: 424px;
-    max-height: 500px;
+    
+    width: 100%;
+    height: 100%;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 16%;
+    padding-bottom: 16%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    
 }
 
 hr.hr-1{
@@ -227,8 +243,20 @@ hr.hr-2{
 MEIO DA PÁGINA
 */
 #parallax{
+    width: auto;
+    height: auto;
     display: grid;
-    margin-bottom: 8%;
+    grid-template-columns: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    
 }
 
 /*
@@ -239,22 +267,26 @@ Valores em porcentagem para melhor responsividade
 */
 .title{
     width: auto;
+    height: auto;
+    align-self: center;
     position: relative;
     margin-left: 24%;
     margin-right: 24%;
     margin-top: 8%;
     margin-bottom: 5%;
-    padding: auto;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: auto;
+    padding-bottom: auto;
 }
 
 /*
 TEXTO: "POR QUE A BEELINGUE?"
 */
 #titulo_pq{
-    text-decoration: none;
     color:#409cff;
-    text-shadow: #5b5b5c 1px 2.5px;
-    font-weight: lighter;
+    /*text-shadow: #5b5b5c 1px 2.5px;*/
+    font-weight: bolder;
     text-align: center;
 
 }
@@ -263,20 +295,27 @@ TEXTO: "POR QUE A BEELINGUE?"
 DESCRIÇÃO DOS ATRIBUTOS DA BEELÍNGUE
 */
 .col{
+    width: auto;
+    height: auto;
+    align-self: center;
     /*
     GRID
     */
     display:grid;
     grid-template-columns: auto auto auto;
-    column-count: 1;
     row-gap: 8%;
     column-gap: 8%;
 
-    margin-left: 5%;
-    margin-right: 5%;
+    align-self: inherit;
+    margin-left: 4%;
+    margin-right: 4%;
     margin-top: auto;
-    margin-bottom: 8%;
-    height: 100%;
+    margin-bottom: 12%;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    
 }
 .col img{
     size: 100px;
@@ -382,10 +421,17 @@ TEXTO: "PLANOS:"
     grid-row-start: 1;
     grid-row-end: 2;
     width: auto;
+    height: auto;
 
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    /*
+    Título Negrito
+    */
+    font-weight: bolder;
 
     padding-top: 8%;
     padding-bottom: 8%;
@@ -395,7 +441,7 @@ TEXTO: "PLANOS:"
 #title2{
     
     color: #1d1d1b;
-    text-shadow: #7c651f 1px 2.5px;
+    /*text-shadow: #7c651f 1px 2.5px;*/
     font-weight: lighter;
     text-align: center;
 
@@ -405,11 +451,20 @@ TEXTO: "PLANOS:"
 
 
 #promo_card{
-    
+
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    display: grid;
+    grid-template-columns: auto auto;
+
+    /*
+    Espaçamento entre cards (deve estar em %)
+    */
+    column-gap: 8%;
+    row-gap: 1.4%;
+
     margin-left: 8%;
     margin-right: 8%;
     
@@ -418,16 +473,20 @@ TEXTO: "PLANOS:"
 #card01{
     
     text-decoration: none;
+    align-items: center;
     padding: 1.5em 1em;
     border: 1px solid #5d5d5d;
+    background-color: #f1f1f1;
     border-radius: 8px;
 }
 
 #card02{
     
     text-decoration: none;
+    align-items: center;
     padding: 1.5em 1em;
     border: 1px solid #5d5d5d;
+    background-color: #f1f1f1;
     border-radius: 8px;
 }
 
