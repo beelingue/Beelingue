@@ -8,6 +8,7 @@
 }
 body{
 overflow: auto;
+-webkit-font-smoothing: antialiased;
 }
   
   .sidebar{

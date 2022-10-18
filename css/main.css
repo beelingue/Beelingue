@@ -33,6 +33,7 @@
 body, html {
 	height: 100%;
 	font-family: "Poppins-Regular", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*---------------------------------------------*/

@@ -1,13 +1,28 @@
-/*Fontes*/
-p, h2, h1, h3, h4, h5, h6, span{
-  font-family: "Roboto", Verdana, Sans-serif;
+/*
+FONTE POPPINS
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  outline: none;
+  border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  -webkit-font-smoothing: antialiased;
 }
 
 .h4 {
   text-align: center;
 }
-
-/*Fontes*/
 
 /*Cadastro*/
 .card-registration .select-input.form-control[readonly]:not([disabled]) {
@@ -24,13 +39,7 @@ p, h2, h1, h3, h4, h5, h6, span{
 /*Cadastro*/
 
 /*Pagamento*/
-*{
-  margin:0; padding:0;
-  box-sizing: border-box;
-  outline: none; border:none;
-  text-transform: capitalize;
-  transition: all .2s linear;
-}
+
 
 .container{
   display: flex;
