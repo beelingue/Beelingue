@@ -119,8 +119,8 @@ BARRA DE ROLAGEM COM IDENTIDADE VISUAL
 #secaoinicial {
     background-color: #427CBA;
     position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: auto;
     overflow: hidden;
     width: 100%;
     height: 100%;
@@ -179,6 +179,7 @@ BARRA DE ROLAGEM COM IDENTIDADE VISUAL
     padding-top: 1.4%;
     padding-bottom: 8.4%;
     text-align: left;
+    text-transform: uppercase;
 
     height: auto;
     margin-top: auto;
@@ -288,6 +289,7 @@ TEXTO: "POR QUE A BEELINGUE?"
     /*text-shadow: #5b5b5c 1px 2.5px;*/
     font-weight: bolder;
     text-align: center;
+    text-transform: uppercase;
 
 }
 
@@ -334,6 +336,7 @@ Ao passar o código no W3C validator, foi constatado que a tag "center" (HTML) �
     margin-bottom: 0px;
     padding-bottom: 0px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 /*Botão de Teste Grátis*/
@@ -406,9 +409,10 @@ ELEMENTO: "PLANOS"
     
     column-gap: 1.4%;
     row-gap: 1.4%;
+    align-items: center;
     
     padding-top: 1.4%;
-    padding-bottom: 1.4%;
+    padding-bottom: 8%;
 }
 
 /*
@@ -428,6 +432,7 @@ TEXTO: "PLANOS:"
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    text-transform: uppercase;
     /*
     Título Negrito
     */
@@ -463,31 +468,111 @@ TEXTO: "PLANOS:"
     Espaçamento entre cards (deve estar em %)
     */
     column-gap: 8%;
-    row-gap: 1.4%;
+    row-gap: 1.4;
+   
 
     margin-left: 8%;
     margin-right: 8%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: auto;
+    padding-bottom: auto;
     
 }
 
+/*
+CARDS DE PLANOS
+*/
 #card01{
     
+    width: 70%;
+    height: auto;
     text-decoration: none;
     align-items: center;
-    padding: 1.5em 1em;
     border: 1px solid #5d5d5d;
     background-color: #f1f1f1;
-    border-radius: 8px;
+    border-radius: 0.50rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    overflow: auto;
 }
 
 #card02{
     
+    width: 70%;
+    height: auto;
     text-decoration: none;
     align-items: center;
-    padding: 1.5em 1em;
     border: 1px solid #5d5d5d;
     background-color: #f1f1f1;
-    border-radius: 8px;
+    border-radius: 0.50rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    overflow: auto;
+}
+
+/*
+IMAGENS DOS CARDS
+*/
+.img_card{
+    height: 40%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+/*
+TÍTULO NOS CARDS
+*/
+#h4_card{
+    color: #1d1d1b;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 1.4%;
+    padding-bottom: 1.4%;
+    text-align: left;
+
+}
+
+/*
+PARÁGRAFO NOS CARDS
+*/
+#p_card{
+    color: #1d1d1b;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 1.4%;
+    padding-bottom: 1.4%;
+    text-align: left;
+
+}
+
+
+/*
+BOTÃO AINDA NÃO CRIADO
+*/
+.btn {
+    color: #1d1d1b;
+    padding: 0.8rem;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+    font-weight: light;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+  }
+  
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
 }
 
 .title h1{
@@ -511,15 +596,10 @@ TEXTO DO FOOTER
 }
 
 /* Cor dos textos do footer*/
-.cortext {
-    text-decoration: none;
-    color:#1d1d1b;
-  }
 #cortext {
     text-decoration: none;
     color: #1d1d1b;
   }
-/* Cor dos textos do footer*/
 
 #centro1 {
     text-decoration: none;
