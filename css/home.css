@@ -476,7 +476,7 @@ TEXTO: "PLANOS:"
     margin-right: 8%;
     margin-top: auto;
     margin-bottom: auto;
-    padding-left: auto;
+    padding-left: 8%;
     padding-right: auto;
     padding-top: auto;
     padding-bottom: auto;
@@ -557,9 +557,9 @@ PARÁGRAFO NOS CARDS
 
 
 /*
-BOTÃO AINDA NÃO CRIADO
+BOTÃO "VER MAIS"
 */
-.btn {
+#info_btn {
     color: #1d1d1b;
     padding: 0.8rem;
     text-transform: uppercase;
@@ -568,12 +568,14 @@ BOTÃO AINDA NÃO CRIADO
     display: block;
     width: 100%;
     cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid #409cff;
     background: transparent;
   }
   
-.btn:hover {
-    background-color: rgba(255, 255, 255, 0.12);
+#info_btn:hover {
+    background-color: #427CBA;
+    color:#f1f1f1;
+
 }
 
 .title h1{
