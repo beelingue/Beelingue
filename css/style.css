@@ -10,20 +10,9 @@
     }
 }
 
-/*
-Barra de progreso
-*/
-
-.barra_prog{
-  position: fixed;
-  z-index: 999;
-  height: 5px;
-  background:-webkit-linear-gradient(0deg,blue, #14ebc7);
-}
-
-/*Baackgrounds ( 　ﾟ,_ゝﾟ)*/
+/*Backgrounds ( 　ﾟ,_ゝﾟ)*/
 main{
-  background-image: url("img/ondas/azul.svg");
+  
   background-repeat: no-repeat;
   background-size: 100% 55%;
 }
@@ -33,7 +22,7 @@ main{
 
 
 #waveplanos {
-  background-image: url("img/ondas/amarelo.svg");
+  
   background-repeat: no-repeat;
   background-size: 100% 175%;
 }
@@ -617,6 +606,15 @@ No entanto, como destaquei acima, as sections estão em conflito, e não posso t
 */  
 display: grid;
 grid-template-columns: auto auto auto;
+margin-top: auto;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 5%;
+padding-left: auto;
+padding-right: auto;
+padding-top: auto;
+padding-bottom: auto;
+
 }
 
 #cont_table{
@@ -625,11 +623,23 @@ margin-top: auto;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: auto;
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 1;
+grid-row-end: 2;
 display: grid;
+grid-template-columns: auto auto auto;
 }
 
 #identificador_estat{
 
+grid-column-start: 1;
+/*
+PARA OCUPAR TODO O ESPAÇO DO TOPO
+*/
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 2;
 margin-top: 8px;
 margin-left: auto;
 margin-right: auto;
@@ -641,50 +651,65 @@ text-shadow: 1.4px 1.4px 0px #cccccc;
 
 #cont_text{
 
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 2;
+grid-row-end: 3;  
 margin-top: auto;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: auto;
 text-align: justify;
+display: grid;
+grid-template-columns: auto auto;
+grid-column-gap: 0.9rem;
 
 }
 
 
 #table{
-
-  /*
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3; 
+  /* 
   A quebra de linha (word-wrap) começará após atingir uma largura de 450 px.
   */
-  width: 450px;
+  width: 30%;
+  height: auto;
   overflow-wrap: break-word;  
   word-wrap: break-word; 
   word-break: break-word;
   border-style: groove;
-  border-radius: 32px;
+  border-radius: 0.9rem;
   display: grid;
 
 
   /*Sombreamento*/
-  box-shadow: 6px 6px 2px gray;
+  /*box-shadow: 6px 6px 2px gray;*/
 
   /*Cor de fundo com opacidade (a opacidade é definida na última combinação numérica, aqui definida por: 0.4)*/
   background-color: #FFD930;
   
   color: #1d1d1d;
-  padding: 24px;
-  margin-top: 24px;
+  padding-left: 1.4%;
+  padding-right: 1.4%;
+  padding-top: 1.4%;
+  padding-bottom: 1.4%; 
+  margin-top: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 24px;
+  margin-bottom: auto;
 }
 
 /*Gráfico de barras*/
 #barras{
 
   cursor: pointer;
-
-  height: 324px;
-  width: 208px;
+  height: auto;
+  width: auto;
+  max-height: 324px;
+  max-width: 208px;
 
   position: relative;
 
@@ -694,39 +719,3 @@ text-align: justify;
   margin-right: auto;
   margin-bottom: 24px;
 }
-
-/*
-#cont_itens{
-
-  text-align: center;
-  
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-}
-
-#cont_itens{
-
-  text-align: center;
-  
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-}
-
-#table_2{
-  width: 450px;
-  overflow-wrap: break-word;  
-  word-wrap: break-word; 
-  word-break: break-word;
-  border-style: groove;
-  display: grid;
-
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-}
-*/
