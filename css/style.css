@@ -595,17 +595,20 @@ sections estão dando conflito
   height: 32px;
 }
 
-#estatisticas{
+#estat{
 
 /*
 SOBRE AS GRIDS:
 
-Utilizei o "display: grid;" para poder dividir o conteúdo milimetricamente, permitindo maior controle dos elementos na página sem precisar do bootstrap a princípio.
+Utilizei o "display: grid;" para poder dividir o conteúdo milimetricamente, permitindo maior controle dos elementos na página sem precisar do bootstrap.
 
 No entanto, como destaquei acima, as sections estão em conflito, e não posso tirar o máximo de proveito das grids por conta delas.
 */  
 display: grid;
-grid-template-columns: auto auto auto;
+grid-template-columns: auto auto;
+grid-column-gap: 0.9rem;
+
+/*align-items: flex-start;*/
 margin-top: auto;
 margin-left: auto;
 margin-right: auto;
@@ -617,105 +620,99 @@ padding-bottom: auto;
 
 }
 
-#cont_table{
+#box_estat{
 
-margin-top: auto;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: auto;
-grid-column-start: 1;
-grid-column-end: 2;
-grid-row-start: 1;
-grid-row-end: 2;
-display: grid;
-grid-template-columns: auto auto auto;
-}
-
-#identificador_estat{
-
-grid-column-start: 1;
-/*
-PARA OCUPAR TODO O ESPAÇO DO TOPO
-*/
-grid-column-end: 3;
-grid-row-start: 1;
-grid-row-end: 2;
-margin-top: 8px;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 1.4px;
-text-align: justify;
-text-shadow: 1.4px 1.4px 0px #cccccc;
-
-}
-
-#cont_text{
-
-grid-column-start: 2;
-grid-column-end: 3;
-grid-row-start: 2;
-grid-row-end: 3;  
-margin-top: auto;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: auto;
-text-align: justify;
-display: grid;
-grid-template-columns: auto auto;
-grid-column-gap: 0.9rem;
-
-}
-
-
-#table{
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3; 
-  /* 
-  A quebra de linha (word-wrap) começará após atingir uma largura de 450 px.
-  */
-  width: 30%;
+  width: auto;
   height: auto;
-  overflow-wrap: break-word;  
-  word-wrap: break-word; 
-  word-break: break-word;
-  border-style: groove;
-  border-radius: 0.9rem;
-  display: grid;
+  background-color: #f0d480;
+  border-radius: 0.9rem 1.4rem;
 
+  grid-column-start: 1;
+  grid-column-end: 2;
 
-  /*Sombreamento*/
-  /*box-shadow: 6px 6px 2px gray;*/
-
-  /*Cor de fundo com opacidade (a opacidade é definida na última combinação numérica, aqui definida por: 0.4)*/
-  background-color: #FFD930;
-  
-  color: #1d1d1d;
-  padding-left: 1.4%;
-  padding-right: 1.4%;
-  padding-top: 1.4%;
-  padding-bottom: 1.4%; 
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
+  padding: 1.4%;
 }
 
-/*Gráfico de barras*/
-#barras{
+/*
+PARÁGRAFO INSIGHTS
+*/
+#p_estat{
 
-  cursor: pointer;
-  height: auto;
-  width: auto;
-  max-height: 324px;
-  max-width: 208px;
+  text-align: justify;
 
-  position: relative;
-
-  padding: 8px;
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 24px;
+  margin-bottom: auto;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+#box_evo{
+  width: auto;
+  height: auto;
+  background-color: #f0d480;
+  border-radius: 0.9rem 1.4rem;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding: 1.4%;
+}
+
+/*
+PARÁGRAFO DE PROGRESSÃO
+*/
+#pizza_graf{
+  width: 10%;
+  height: 100%;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+#p_evo{
+
+  text-align: justify;
+
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+/*
+ELEMENTO h4 DAS ESTATÍSTICAS
+*/
+#title_estat{
+
+  text-align: center;
+
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 1.4rem;
+  padding-bottom: 0.9rem;
 }
