@@ -11,7 +11,6 @@ FONTE POPPINS
   box-sizing: border-box;
   outline: none;
   border:none;
-  text-transform: capitalize;
   transition: all .2s linear;
   font-family: 'Poppins', sans-serif;
 }
@@ -47,7 +46,7 @@ body{
   align-items: center;
   padding:25px;
   min-height: 100vh;
-  background-color: #FECB37;
+  background-color: #ffdd77;
 }
 
 .container form{
@@ -71,7 +70,6 @@ body{
   font-size: 20px;
   color:#333;
   padding-bottom: 5px;
-  text-transform: uppercase;
 }
 
 .container form .row .col .inputBox{
