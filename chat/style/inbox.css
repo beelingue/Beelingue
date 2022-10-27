@@ -1,5 +1,10 @@
 @import "global.css";
 
+#inbox{
+    background-color: #ffde7b
+    ;
+}
+
 #inbox input.searchField{
     display: block;
     margin: auto;
@@ -8,7 +13,7 @@
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
-    background-color: #EEE;
+    background-color: #e6c870;
 }
 
 #inbox #searchContainer{
