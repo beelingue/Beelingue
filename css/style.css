@@ -4,36 +4,13 @@
 /* ===== Google Font Import - Poppins ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
-
 @media screen and (max-width: 600px) {
     .column {
       width: 100%;
     }
 }
 
-/*
-BARRA DE ROLAGEM COM IDENTIDADE VISUAL
-*/
-/*::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-  background: var(--primary-color);
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #fbc31b;
-
-  display: flex;
-}*/
-
 body{
-  overflow: auto;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -46,6 +23,7 @@ main{
 #secaoinicial {
   background-color: #487cbc;
 }
+
 
 #waveplanos {
   
@@ -219,7 +197,7 @@ h1 {
   font-family: 'Poppins', sans-serif;
 }
 body{
-  
+  overflow: auto;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -462,17 +440,13 @@ body{
 /*Cards*/
 
 .content{
-  max-width: 1090px;
   width: 100%;
-  margin-top: 1.4%;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
  .content .card{
+  border-radius: 12px;
   cursor: pointer;
   background: #ececec;
   width: calc(33% - 20px);
@@ -481,6 +455,7 @@ body{
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 .content .card .top{
+  border-radius: 12px;
   height: 130px;
   color: #ececec;
   padding: 12px 0 0 0 ;

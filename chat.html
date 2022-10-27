@@ -3,11 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat</title>
-  <link rel="icon" type="image/png" href="img/logo/logo.png"/>
+  <link rel="icon" type="image/png" href="img/logo/logo.png" />
   <link type="text/css" rel="stylesheet" href="../css/style.css">
+  <link type="text/css" rel="stylesheet" href="../css/style2.css">
   <link type="text/css" rel="stylesheet" href="chat/style/homepage.css">
   <link type="text/css" rel="stylesheet" href="chat/style/inbox.css">
   <link type="text/css" rel="stylesheet" href="chat/style/chat.css">
@@ -22,112 +23,106 @@
 
 <body>
 
-        <header></header>
+  <!--side bar -->
+  <div class="sidebar close">
+    <div class="logo-details">
+      <a class="navbar-brand"><img src="image/logos/logo_abelha_transp.png" width="90%" height="90%" alt="logo do site"></a>
+      <span class="logo_name">Beelíngue</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="turmas.html">Turmas</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="turmas.html">
+            <i class='bx bx-collection'></i>
+            <span class="link_name">Turmas</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="turmas.html">Turmas</a></li>
+          <li><a href="turmas.html">Turma 1</a></li>
+          <li><a href="turmas.html">Turma 2</a></li>
+          <li><a href="turmas.html">Turma 3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="tarefas.html">
+          <i class='bx bx-task'></i>
+          <span class="link_name">Tarefas</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="tarefas.html">Tarefas</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="estatisticas.html">
+            <i class='bx bx-pie-chart-alt-2'></i>
+            <span class="link_name">Estatísticas</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="estatisticas.html">Estatísticas</a></li>
+          <li><a href="#">Alunos</a></li>
+          <li><a href="#">Turmas</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="chat.html">
+          <i class='bx bx-chat'></i>
+          <span class="link_name">Chat</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="chat.html">Chat</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="usuario.html">
+          <i class='bx bx-user'></i>
+          <span class="link_name">Usuário</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="usuario.html">Usuário</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="profile-details">
+          <div class="profile-content">
+            <img src="image/profile.jpg" alt="profileImg">
+          </div>
+          <div class="name-job">
+            <div class="profile_name">Luiz Marques</div>
+            <div class="job">Professor</div>
+          </div>
+          <!-- Botão sair (perfil) -->
+          <a href="login.html"><i class='bx bx-log-out'></i></a>
+        </div>
+      </li>
+    </ul>
+  </div>
 
-        <main>
-            <!--
-            Side navbar
-            -->
-            <div class="sidebar close">
-                <div class="logo-details">
-                  <a class="navbar-brand"><img src="image/logos/logo_abelha_transp.png"
-                  width="100%"
-                  height="100%"
-                  ></a>
-                  <span class="logo_name">Beelíngue</span>
-                </div>
-                <ul class="nav-links">
-                  <li>
-                    <ul class="sub-menu blank">
-                      <li><a class="link_name" href="index.html">Módulos</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <div class="iocn-link">
-                      <a href="index.html">
-                        <i class='bx bx-collection' ></i>
-                        <span class="link_name">Módulos</span>
-                      </a>
-                      <i class='bx bxs-chevron-down arrow'></i>
-                    </div>
-                    <ul class="sub-menu">
-                      <li><a class="link_name" href="index.html">Módulos</a></li>
-                      <li><a href="index.html">Módulo 1</a></li>
-                      <li><a href="index.html">Módulo 2</a></li>
-                      <li><a href="index.html">Módulo 3</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="tarefas.html">
-                      <i class='bx bx-task' ></i>
-                      <span class="link_name">Tarefas</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                      <li><a class="link_name" href="tarefas.html">Tarefas</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <div class="iocn-link">
-                      <a href="estatisticas.html">
-                        <i class='bx bx-pie-chart-alt-2' ></i>
-                        <span class="link_name">Estátisticas</span>
-                      </a>
-                      <i class='bx bxs-chevron-down arrow' ></i>
-                    </div>
-                    <ul class="sub-menu">
-                      <li><a class="link_name" href="estatisticas.html">Estatísticas</a></li>
-                      <li><a href="#">Alunos</a></li>
-                      <li><a href="#">Turmas</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="chat.html">
-                      <i class='bx bx-chat'></i>
-                      <span class="link_name">Chat</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                      <li><a class="link_name" href="chat.html">Chat</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="usuario.html">
-                      <i class='bx bx-user'></i>
-                      <span class="link_name">Usuário</span>
-                    </a>
-                    <ul class="sub-menu blank">
-                      <li><a class="link_name" href="usuario.html">Usuário</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                <div class="profile-details">
-                  <div class="profile-content">
-                    <img src="image/profile.jpg" alt="profileImg">
-                  </div>
-                  <div class="name-job">
-                    <div class="profile_name">Luiz Marques</div>
-                    <div class="job">Aluno</div>
-                  </div>
-                  <!-- Botão sair (perfil) -->
-                  <a href="login.html"><i class='bx bx-log-out'></i></a>
-                </div>
-              </li>
-            </ul>
-              </div>
-    
-            <!--
-                Fim da navbar
-            -->
-    
-            <!--
-              Section em conflito com as grids
-            -->
-            <section class="home-section">
-              <div class="home-content">
-                <i class='bx bx-menu'></i>
-                <span class="text">Suas conversas: </span>
-                <img src="img/estatisticas/ajustar.png" id="config_icon">
-                <img src="img/estatisticas/pen_colored.png" id="edit_icon">
-              </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu'></i>
+      <span class="text">Chat</span>
+
+      <div class="content">
+        <!-- Chat-->
+        <div id="loading">Loading&#8230;</div>
+
+        <div id="inbox" class="column">
+          <p class="title">Conversas</p>
+          <input type="text" maxlength="15" name="username" class="searchField" onkeyup="search()"
+            placeholder="Pesquisar utilizador" />
+          <div id="searchContainer"></div>
+          <div class="container"></div>
+        </div>
 
         <div id="chat" class="column"></div>
 
