@@ -4,10 +4,37 @@
 /* ===== Google Font Import - Poppins ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
+
 @media screen and (max-width: 600px) {
     .column {
       width: 100%;
     }
+}
+
+/*
+BARRA DE ROLAGEM COM IDENTIDADE VISUAL
+*/
+/*::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fbc31b;
+
+  display: flex;
+}*/
+
+body{
+  overflow: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*Backgrounds ( 　ﾟ,_ゝﾟ)*/
@@ -19,7 +46,6 @@ main{
 #secaoinicial {
   background-color: #487cbc;
 }
-
 
 #waveplanos {
   
@@ -193,7 +219,7 @@ h1 {
   font-family: 'Poppins', sans-serif;
 }
 body{
-  overflow: auto;
+  
   -webkit-font-smoothing: antialiased;
 }
 
@@ -438,7 +464,10 @@ body{
 .content{
   max-width: 1090px;
   width: 100%;
-  margin: auto;
+  margin-top: 1.4%;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -607,9 +636,9 @@ No entanto, como destaquei acima, as sections estão em conflito, e não posso t
 display: grid;
 grid-template-columns: auto auto;
 grid-column-gap: 0.9rem;
+grid-row-gap: 0.9rem;
 
-/*align-items: flex-start;*/
-margin-top: auto;
+margin-top: 1.4%;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 5%;
@@ -621,14 +650,16 @@ padding-bottom: auto;
 }
 
 #box_estat{
-
+/*INSIGHTS*/
   width: auto;
   height: auto;
-  background-color: #f0d480;
+  background-color: #ffde7b;
   border-radius: 0.9rem 1.4rem;
 
   grid-column-start: 1;
   grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
 
   margin-top: auto;
   margin-left: auto;
@@ -655,13 +686,17 @@ PARÁGRAFO INSIGHTS
 }
 
 #box_evo{
+
+  /*PROGRESSO*/
   width: auto;
   height: auto;
-  background-color: #f0d480;
+  background-color: #ffde7b;
   border-radius: 0.9rem 1.4rem;
 
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 
   margin-top: auto;
   margin-left: auto;
@@ -672,6 +707,9 @@ PARÁGRAFO INSIGHTS
 
 /*
 PARÁGRAFO DE PROGRESSÃO
+*/
+/*
+<a href="https://www.flaticon.com/free-icons/statistics" title="statistics icons">Statistics icons created by Freepik - Flaticon</a>
 */
 #pizza_graf{
   width: 10%;
@@ -716,3 +754,101 @@ ELEMENTO h4 DAS ESTATÍSTICAS
   padding-top: 1.4rem;
   padding-bottom: 0.9rem;
 }
+
+#desc_estat{
+  width: auto;
+  height: 100%;
+  border-radius: 0.9rem 1.4rem;
+  background-color: #eeeeee;
+  justify-items: center;
+  align-content: center;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+#p_desc_estat{
+  text-align: center;
+  line-height: 2.7rem;
+}
+
+.dropdown{
+  width: 20%;
+  height: auto;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  /*border: 2px solid #487cbc;
+  border-radius: 8%;*/
+}
+
+#list_base{
+  cursor: context-menu;
+}
+
+.dropdown ul{
+  list-style: none;
+  position: relative;
+
+}
+
+.dropdown ul li{
+  float: left;
+}
+
+.dropdown a{
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #487cbc;
+
+}
+/*
+ANIMAÇÃO
+*/
+.dropdown ul ul{
+  visibility: hidden;
+}
+
+.dropdown ul li:hover ul{
+  visibility: visible;
+}
+
+.dropdown a:hover{
+  color: #000000;
+}
+
+.dropdown ul ul li{
+  float: none;
+}
+
+/*
+#menu_estat{
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  text-transform: capitalize;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.4rem;
+  padding: 0.9rem;
+  background-color: #487cbc;
+  color: #ffffff;
+}
+*/
