@@ -1,138 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<title>Fazer Login</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="image/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Cadastro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <!--===============================================================================================-->
+  <link rel="icon" type="image/png" href="image/icons/favicon.ico" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="css/util.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!--===============================================================================================-->
+</head>
   <!--Cadastro de aluno-->
+
   <body style="background-color: #fecb37;">
-  <section class="h-100">
-    <div class="container py-5 h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col">
-          <div class="card card-registration my-4">
-            <div class="row g-0">
-              <div class="col-xl-6 d-none d-xl-block">
-                <img src="img/abelha.png"
-                  alt="Sample photo" class="img-fluid"
-                  style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem; transform: rotate(90deg);"/>
-              </div>
-              <div class="col-xl-6">
-                <div class="card-body p-md-5 text-black">
-                  <h3 class="mb-5 text">Cadastro do Professor</h3>
-  
-                  <div class="row">
-                    <div class="col-md-6 mb-4">
-                      <div class="form-outline">
-                        <label class="form-label" for="form3Example1m">Primeiro nome</label>
-                        <input type="text" id="form3Example1m" class="form-control form-control-lg" placeholder="Gabriel"/>
-                      </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                      <div class="form-outline">
-                        <label class="form-label" for="form3Example1n">Segundo nome</label>
-                        <input type="text" id="form3Example1n" class="form-control form-control-lg" placeholder="Scheamidt"/>
-                      </div>
-                    </div>
-                  </div>
 
-                  <div class="form-outline mb-4">
-                    <label class="form-label" for="form3Example8">Nome de Usuário</label>
-                    <input type="text-lowercase" id="form3Example8" class="form-control form-control-lg" />
-                  </div>
-  
-                  <div class="form-outline mb-4">
-                    <label class="form-label" for="form3Example8">Endereço de Email</label>
-                    <input type="text-lowercase" id="form3Example8" class="form-control form-control-lg" placeholder="gabtreo@gmail.com"/>
-                  </div>
-  
-                  <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
-
-                    <!-- Arrumar o check de genero-->
-                    
-                    <!--<h6 class="mb-0 me-4">Gênero: </h6>
-  
-                    <div class="form-check form-check-inline mb-0 me-4">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
-                        value="option1"/>
-                      <label class="form-check-label" for="femaleGender">Feminino</label>
-                    </div>
-  
-                    <div class="form-check form-check-inline mb-0 me-4">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
-                        value="option2"/>
-                      <label class="form-check-label" for="maleGender">Masculino</label>
-                    </div>-->
-  
-                  </div>
-                  <div class="form-outline mb-4">
-                    <label class="form-label" for="form3Example90">Telefone</label>
-                    <input type="number" id="form3Example90" class="form-control form-control-lg"/>
-                  </div>
-                  <div class="form-outline mb-4">
-                    <label class="form-label" for="form3Example90">CPF</label>
-                    <input type="number" id="form3Example90" class="form-control form-control-lg"/>
-                  </div>
-                  <div class="form-outline mb-4">
-                    <label class="form-label" for="form3Example90">Senha</label>
-                    <input type="password" id="form3Example90" class="form-control form-control-lg"/>
-                  </div>
-  
-                  <div class="form-outline mb-4">
-                      <label class="form-label" for="form3Example99">Confirme a senha</label>
-                    <input type="password" id="form3Example99" class="form-control form-control-lg"/>
-                  </div>
-
-                  <div class="d-flex justify-content-end pt-3">
-                    <a href="home.html"><button type="button" class="btn btn-outline-warning ">Voltar</button></a>
-                    <a href="pagamento.html"><button type="button" class="btn btn-primary ms-2" >Próximo</button></a>
-                  </div>
-  
-                </div>
-              </div>
-            </div>
+    <div class="limiter">
+      <div class="container-login100">
+        <div class="wrap-login100">
+          <div class="login100-pic js-til">
+            <img src="img/login/img_01.png" alt="IMG">
           </div>
+
+          <form class="login100-form validate-form">
+            <span class="login100-form-title">
+              Cadastro de Professor
+            </span>
+
+            <!--Nome Completo-->
+            <label>Nome Completo</label>
+            <div class="wrap-input100 validate-input" data-validate="É necessário o seu nome completo">
+              <input class="input100" type="text" name="email" placeholder="Gabriel">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="bx bxs-user" aria-hidden="true"></i>
+              </span>
+            </div>
+            
+            <!--Nome de Usuário-->
+
+            <label>Nome de Usuário</label>
+            <div class="wrap-input100 validate-input" data-validate="É necessário um nome de usuário">
+              <input class="input100" type="text" name="email" placeholder="Gabriel">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="bx bxs-user-account" aria-hidden="true"></i>
+            </div>
+
+            <!--Endereço de Email-->
+
+            <label>Endereço de Email</label>
+            <div class="wrap-input100 validate-input" data-validate="Um e-mail valido é requerido: exemplo@abc.com">
+              <input class="input100" type="text" name="email" placeholder="robertocarlos28@gmail.com">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="bx bx-envelope" aria-hidden="true"></i>
+              </span>
+            </div>
+
+            <!--Senha-->
+
+            <label>Senha</label>
+            <div class="wrap-input100 validate-input" data-validate="A Senha é requerida">
+              <input class="input100" type="password" name="pass" placeholder="Senha">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="bx bx-lock-alt" aria-hidden="true"></i>
+              </span>
+            </div>
+
+            <!--Confirmação de Senha-->
+
+            <label>Confirme a Senha</label>
+            <div class="wrap-input100 validate-input" data-validate="Confirme a senha">
+              <input class="input100" type="password" name="pass" placeholder="Senha">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="bx bx-lock-alt" aria-hidden="true"></i>
+              </span>
+            </div>
+
+            <!--Botão para entrar-->
+            <div class="container-login100-form-btn">
+              <a href="turmas.html"><button class="login100-form-btn">
+                  Cadastrar-se
+                </button></a>
+            </div>
+
+            <!-- Link para página de cadastro -->
+           <!--Esqueceu sua senha-->
+					<div class="text-center p-t-12">
+              <span class="txt1">
+                Já tenho uma
+              </span>
+              <a class="txt2" href="login.html">
+                conta?
+              </a>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-  </section>
- <!--Cadastro de aluno-->
 
- <!--===============================================================================================-->	
- <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
- <!--===============================================================================================-->
-   <script src="vendor/bootstrap/js/popper.js"></script>
-   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
- <!--===============================================================================================-->
-   <script src="vendor/select2/select2.min.js"></script>
- <!--===============================================================================================-->
-   <script src="vendor/tilt/tilt.jquery.min.js"></script>
-   <script >
-     $('.js-tilt').tilt({
-       scale: 1.1
-     })
-   </script>
- <!--===============================================================================================-->
-   <script src="js/main.js"></script>
-</body>
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/tilt/tilt.jquery.min.js"></script>
+    <script>
+      $('.js-tilt').tilt({
+        scale: 1.1
+      })
+    </script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+  </body>
 
 </html>
