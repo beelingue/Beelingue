@@ -16,9 +16,11 @@ Fonte e posicionamento padronizados
 
 /*
 Anti-aliasing para Tipografia
+Line-height confortável para leitura
 */
 body{
   -webkit-font-smoothing: antialiased;
+
 }
 
 /*
@@ -39,6 +41,28 @@ Responsividade
 }
 
 /*
+BARRA DE ROLAGEM COM IDENTIDADE VISUAL
+*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--cor-amarelo);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+/*
+ESPAÇAMENTO DE LETRAS PARA TÍTULOS NO SITE
+*/
+h1, h2{
+    letter-spacing: 0.9vh;
+}
+
+/*
 .img_header{
 
 }
@@ -49,7 +73,7 @@ LOGO BEELÍNGUE -> MENU SUPERIOR
 */
 #logo_super{
     display: inline-block;
-    width: 10%;
+    width: 12%;
     height: 100%;
 
     text-decoration: none;
@@ -104,24 +128,22 @@ LOGO BEELÍNGUE -> MENU SUPERIOR
     
     
 }
-    
 
 /* main*/
-.container2{
-    column-count: 2;
-    column-gap: 40px;
+.cont-main{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 8%;
     width: 60%;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    font-family:Arial, Helvetica, sans-serif;
-    }
+}
 
 .container3{
     column-count: 3;
     column-gap: 25px;
     width: 80%;
-    font-family:Arial, Helvetica, sans-serif;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -135,32 +157,9 @@ LOGO BEELÍNGUE -> MENU SUPERIOR
     width: 100%;
     text-align: center;
     font-size: 18px;
-    font-family:Arial, Helvetica, sans-serif;
 }
-
-.button-y{
-    background-color: var(--cor-amarelo); 
-    border: none;
-    color: black;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block ;
-    font-size: 12px;
-    font-family:Arial, Helvetica, sans-serif;
-    border-radius: 10%;
-
-}
-
-.button-y:hover, .button-y:focus{
-    
-      box-shadow: 0 0.5em 0.5em -0.4em var(--cor-preto);
-      transform: translateY(-0.25em);
-    }
-
 
 .plano{
-    font-family:Arial, Helvetica, sans-serif;
     border: 0.5px solid black;
     width: 250px;
     height: 300px;
@@ -183,7 +182,6 @@ LOGO BEELÍNGUE -> MENU SUPERIOR
 
 .plano h5{
     font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .divisor{
@@ -241,9 +239,9 @@ LOGO BEELÍNGUE -> MENU SUPERIOR
 
 .section-main{
 background-color: var(--cor-azul);
-width: 100%;
-padding-top: 30px;
-padding-bottom: 30px;
+width: auto;
+height: 100%;
+min-height: 458px;
 }
 
 .geeks {
@@ -279,6 +277,10 @@ section {
 padding-top: 35px;
 }
 
+.cards{
+    align-items: center;
+}
+
 footer {
    /* background-color: var(--cor-cinza);*/
 height: 150px;
@@ -286,22 +288,102 @@ padding-top: 25px;
 padding-bottom: 25px;
 }
 
-.meio{
-    position: relative;
-    left: 0;
-    top: 15%;
+.up_cont{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
     width: 100%;
+    height: auto;
+    display: grid;
+    /*
+    GRID DIVIDIDO EM 1 COLUNA
+    */
+    grid-template-columns: auto;
+    /*
+    "column-gap" JÁ ESTÁ ATIVADO NA GRID RAIZ
+    */
+    row-gap: 1.4%;
 
+    padding: 1.4%;
+    position: relative;
+    color: #f1f1f1
+}
+
+/*
+DIV DA ILUSTRAÇÃO MOBILE
+*/
+#mobile_cont{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    width: auto;
+    height: auto;
     
 }
 
-.meio h1{
-    font-size: 40px;
+/*
+ILUSTRAÇÃO MOBILE
+*/
+#tela_ilus{
+    width: 100%;
+    height: auto;
 }
 
-.meio p{
-    font-size: 20px;
+#tit_up{
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
 }
+
+#p_up{
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+
+}
+
+.bt_super{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: var(--cor-amarelo); 
+
+}
+
+/*.button-y:hover, .button-y:focus{
+    
+      box-shadow: 0 0.5em 0.5em -0.4em var(--cor-preto);
+      transform: translateY(-0.25em);
+}
+*/
 
 hr{
     width: 50%;
