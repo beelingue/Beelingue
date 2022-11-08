@@ -33,9 +33,16 @@ html, body{
 Responsividade
 */
 @media screen and (max-width: 720px) {
-    .column {
-      width: 100%;
+
+    /*COLUNAS MEIO DA PÁGINA*/
+    .col.first{
+        flex-direction: column;
     }
+
+    .col.two{
+        flex-direction: column;
+    }
+
 }
 
 :root{
@@ -90,9 +97,10 @@ header{
 LOGO BEELÍNGUE -> MENU SUPERIOR
 */
 #logo_super{
-    /*display: inline-block;*/
-    width: 12%;
+    width: 80%;
+    max-width: 160px;
     height: 100%;
+    max-height: 50px;
 
     text-decoration: none;
     margin-top: auto;
@@ -205,6 +213,7 @@ div no main
     display: grid;
     /*grid DIVIDIDO EM 1 COLUNA*/
     grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
     /*"column-gap" JÁ ESTÁ ATIVADO NA GRID RAIZ*/
     row-gap: 1.4%;
     align-items: center;
@@ -293,18 +302,22 @@ BOTÃO CORRESPONDENTE AO main
 
     background: transparent;
     cursor: pointer;
-    margin: 1.4%;
     width: 130px;
     height: 40px;
     border-radius: 8px;
     transition: all 0.3s ease;
     position: relative;
+    align-self: center;
     display: inline-block;
     outline: none;
     box-shadow:inset
    7px 7px 20px 0px rgba(0,0,0,.1),
    4px 4px 5px 0px rgba(0,0,0,.1);
     border: none;
+    margin-top: 1.4%;
+    margin-bottom: 1.4%;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: auto;
     padding-bottom: auto;
     padding-left: auto;
@@ -406,9 +419,10 @@ BOTÃO CORRESPONDENTE AO main
 
 .container3{
     display: grid;
-    /*TODOS POSSUEM A MESMA FRAÇÃO*/
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
+    row-gap: 0%;
+    column-gap: 0.9%;
     width: 100%;
     position: relative;
     margin-bottom: auto;
@@ -420,11 +434,18 @@ BOTÃO CORRESPONDENTE AO main
     padding-right: auto;
 }
 
+/*
+TÍTULO "POR QUE A BEELÍNGUE?"
+*/
+.tit_middle{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
 
-.col{
-    width: auto;
-    height: auto;
-    margin-bottom: auto;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 1.4%;
     padding-top: auto;
     padding-bottom: auto;
     margin-left: auto;
@@ -433,20 +454,46 @@ BOTÃO CORRESPONDENTE AO main
     padding-right: auto;
 }
 
-.first{}
-
-.two{}
-
-.three{}
-
-.item-col{
-    padding: 10px;
-    border-radius: 5%;
-    border: 0.5px ;
-    margin: 5px;
-    height: 225px;
-
+/*
+TODAS AS col
+*/
+.col{
+    /*display flex PARA TODAS AS col*/
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto%;
+    padding: 1.4%;
 }
+
+/*PRIMEIRA col*/
+.first{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    flex-direction: column;
+}
+
+/*SEGUNDA col*/
+.two{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    flex-direction: column;
+}
+
+/*.item-col{
+    margin-top: 1.4%;
+    margin-bottom: 1.4%;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+}*/
 
 .item-col li{
     list-style: none;
@@ -457,26 +504,10 @@ BOTÃO CORRESPONDENTE AO main
 }
 
 .item-col ul {
-    display: block;
     list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
 }
 
-/*TÍTULO CENTRALIZADO*/
-/*
-.center {
-    position: static;
-    left: 0;
-    top: 50%;
-    margin-top: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
-}*/
+/*FIM DO MEIO DA PÁGINA*/
 
 .plano{
     border: 0.5px solid black;
