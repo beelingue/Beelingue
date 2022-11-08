@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Cards</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 id="title">Selecione como gostaria de se cadastar ?</h1>
+
+    <main class="cards">
+
+        <section class="card professor" value="Redirecionar sem Histórico" onclick="redirecioneProfessor();">
+            <div class="icon">
+                <img src="assets/teacher1.png" alt="Professor">
+            </div>
+            <h2>Professor</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            <!--<button>Cadastrar-se</button> -->
+        </section>
+
+        <section class="card aluno" value="Redirecionar sem Histórico" onclick="redirecioneAluno();">
+            <div class="icon">
+                <img src="assets/alunos.png" alt="Aluno">
+            </div>
+            <h2>Aluno</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            <!--<button>Cadastrar-se</button> -->
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
