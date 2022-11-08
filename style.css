@@ -20,24 +20,19 @@ Fonte e posicionamento padronizados
     padding: 0;
 }
 
+/*
+Anti-aliasing para Tipografia
+*/
 html, body{
     width: 100%;
     height: 100%;
-}
-
-/*
-Anti-aliasing para Tipografia
-Line-height confortável para leitura
-*/
-body{
-  -webkit-font-smoothing: antialiased;
-
+    -webkit-font-smoothing: antialiased;
 }
 
 /*
 Responsividade
 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
     .column {
       width: 100%;
     }
@@ -398,15 +393,81 @@ BOTÃO CORRESPONDENTE AO main
 
 /*FIM DO MAIN*/
 
-.container3{
-    column-count: 3;
-    column-gap: 25px;
-    width: 80%;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+/*MEIO DA PÁGINA*/
+.meio_secao {
+    display: grid;
+    /*grid DE UMA COLUNA*/
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    width: 100%;
+    min-height: 300px;
+
 }
 
+.container3{
+    display: grid;
+    /*TODOS POSSUEM A MESMA FRAÇÃO*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    width: 100%;
+    position: relative;
+    margin-bottom: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+
+.col{
+    width: auto;
+    height: auto;
+    margin-bottom: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.first{}
+
+.two{}
+
+.three{}
+
+.item-col{
+    padding: 10px;
+    border-radius: 5%;
+    border: 0.5px ;
+    margin: 5px;
+    height: 225px;
+
+}
+
+.item-col li{
+    list-style: none;
+}
+
+.item-col li a{
+    color: black;
+}
+
+.item-col ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+/*TÍTULO CENTRALIZADO*/
+/*
 .center {
     position: static;
     left: 0;
@@ -415,7 +476,7 @@ BOTÃO CORRESPONDENTE AO main
     width: 100%;
     text-align: center;
     font-size: 18px;
-}
+}*/
 
 .plano{
     border: 0.5px solid black;
@@ -442,17 +503,13 @@ BOTÃO CORRESPONDENTE AO main
     font-size: large;
 }
 
-.divisor{
-    width: 100%;
-    height: 200px;
-    position: static;
+/*RODAPÉ DA PÁGINA*/
 
-}
-.divisor1{
-    width: 100%;
-    height: 100px;
-    position: static;
-
+.cont_footer{
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .icons{
@@ -464,22 +521,6 @@ BOTÃO CORRESPONDENTE AO main
 .icons-footer{
     width: 30px;
     height: 30px;
-}
-.item-col{
-    padding: 10px;
-    border-radius: 5%;
-    border: 0.5px ;
-    margin: 5px;
-    height: 225px;
-
-}
-
-.item-col li{
-    list-style: none;
-}
-
-.item-col li a{
-    color: black;
 }
 
 .img-footer{
@@ -493,15 +534,9 @@ BOTÃO CORRESPONDENTE AO main
     margin-left: 8px;
 }
 
-
 .geeks {
     padding: 200px;
     text-align: center;
-}
-
-section {
-    width: 100%;
-    min-height: 300px;
 }
 
 .pattern {
@@ -556,13 +591,4 @@ padding-bottom: 25px;
 hr{
     width: 50%;
     margin-bottom: 35px;
-}
-.item-col ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
 }
