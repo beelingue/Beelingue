@@ -4,48 +4,6 @@
 /* ===== Google Font Import - Poppins ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
-/*
-Fonte e posicionamento padronizados
-*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-*:before, *:after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/*
-Anti-aliasing para Tipografia
-*/
-html, body, ul, li{
-    width: 100%;
-    height: 100%;
-    -webkit-font-smoothing: antialiased;
-    list-style: none;
-}
-
-/*
-Responsividade
-*/
-@media screen and (max-width: 720px) {
-
-    /*COLUNAS MEIO DA PÁGINA*/
-    .col.first{
-        flex-direction: column;
-    }
-
-    .col.two{
-        flex-direction: column;
-    }
-
-}
-
 :root{
     --cor-azul: #427CBA;
     --cor-azul-claro: #cbe3fd;
@@ -70,6 +28,126 @@ BARRA DE ROLAGEM COM IDENTIDADE VISUAL
 }
 
 /*
+Fonte e posicionamento padronizados
+*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+*:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+Anti-aliasing para Tipografia
+Otimização de renderização de texto
+*/
+html, body{
+    height: 100vh;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+Responsividade
+*/
+@media screen and (max-width: 630px) {
+    /*MENU SUPERIOR*/
+    .barra{
+        display: none;
+    }
+
+    /*MENU SUPERIOR MOBILE*/
+    .list1, .list2, .list3{
+        background-color: var(--cor-preto);
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+
+    /*HAMBURGUER FULLSCREEN*/
+    .hamburguer.click{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        /*SOBREPOSIÇÃO DO MENU*/
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sand{
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    /*MENU HAMBURGUER ABERTO*/
+    .hamburguer.click, .barra{
+        display: block;
+        z-index: 10;
+    }
+
+    .hamburguer.click .sand{
+        position: absolute;
+        right: 0;
+        top: 15;
+    }
+
+    /*MENU EM "X" (APENAS MOBILE)*/
+    .hamburguer.click .sand .list1{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .hamburguer.click .sand .list2{
+        opacity: 0; 
+    }
+
+    .hamburguer.click .sand .list3{
+        transform: rotate(-45deg) translate(8px, -10px);
+    }
+
+    .hamburguer.click, .barra ul{
+        text-align: center;
+        display: block;
+    }
+
+    .hamburguer.click, .barra ul a{
+        transition-duration: 0.5s;
+        font-size: 16px;
+        line-height: 1.6rem;
+        display: block;
+    }
+
+    /*COLUNAS MEIO DA PÁGINA*/
+    .col.first{
+        flex-direction: column;
+    }
+
+    .col.two{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    #mobile_cont, #tela_ilus{
+        display: none;
+    }
+}
+
+/*
 ESPAÇAMENTO DE LETRAS PARA TÍTULOS NO SITE E FORMATAÇÃO
 */
 h1, h2{
@@ -84,15 +162,9 @@ h1{
     font-size: 4.5vh;
 }
 
-header{
-    margin-top: 0.5%;
-    margin-bottom: auto;
-    padding-top: auto;
-    padding-bottom: auto;
-    margin-left: 0.5%;
-    margin-right: 0.5%;
-    padding-left: auto;
-    padding-right: auto;
+h3{
+    font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
 p{
@@ -109,73 +181,188 @@ p{
    padding-right: auto;
 }
 
-a{
+a, ul, li{
     text-decoration: none;
+    list-style: none;
+    color: var(--cor-preto);
 }
 
 /*
-LOGO BEELÍNGUE -> MENU SUPERIOR
+MENU SUPERIOR
 */
-#logo_super{
-    /*TAMANHO RESPONSIVO*/
-    width: 80%;
-    max-width: 160px;
-    height: 100%;
-    max-height: 50px;
-
-    text-decoration: none;
-    margin-top: auto;
-    margin-bottom: auto;
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background: white;
+    width: auto;
+    height: auto;
+    max-height: 80px;
+    margin: 0.9%;
     padding-top: auto;
     padding-bottom: auto;
-    margin-left: 1.4%;
-    margin-right: auto;
     padding-left: auto;
     padding-right: auto;
 }
 
-/*.cont_header{}*/
-
-/*.barra_super{
+/*
+CLASSE DO ELEMENTO ul
+*/
+.menu{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1.4%;
     align-items: center;
-}*/
+}
 
-/*.bt_menu{
+/*
+ESPAÇAMENTO ENTRE OPÇÕES
+*/
+.menu li{
+    margin-left: 1.2em;
+}
+
+.menu li a{
+    display: block;
+    padding: 1em;
+}
+
+/*
+LOGO -> MENU SUPERIOR
+*/
+#logo_super{
+    /*TAMANHO RESPONSIVO*/
+    width: 90%;
+    max-width: 160px;
+    height: 100%;
+    max-height: 50px;
+
+    /*text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;*/
+}
+
+/*
+ESTILO DE TEXTO PARA MENUS NO HEADER
+*/
+#paragrafo_sup{
+    opacity: 75%;
+}
+
+/*
+BOTÃO DO MENU SUPERIOR
+*/
+.bt_menu{
+    display: flex;
+    /*ALINHAMENTO*/
+    align-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    /*COLUNAS*/
+    flex-direction: column;
+    column-count: 1;
+    /*COR DA FONTE*/
     color: #ffffff;
     background: transparent;
     cursor: pointer;
+    /*TAMANHO DO BOTÃO*/
     width: 130px;
     height: 40px;
     border-radius: 8px;
     transition: all 0.3s ease;
     position: relative;
-    align-self: center;
     outline: none;
     box-shadow:inset
    7px 7px 20px 0px rgba(0,0,0,.1),
    4px 4px 5px 0px rgba(0,0,0,.1);
     border: none;
+    /*ESPAÇAMENTO*/
     margin-top: 1.4%;
     margin-bottom: 1.4%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: auto;
-    padding-bottom: auto;
-    padding-left: auto;
-    padding-right: auto;
-}*/
+}
 
-/*.sup{
+.nav{
     background-color: var(--cor-azul);
     background: linear-gradient(0deg, var(--cor-azul) 0%, #1d5da1 100%);
     width: 130px;
     height: 40px;
-}*/
+}
 
+.nav p{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 7%;
+}
+
+.nav:before, .nav:after{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: var(--cor-preto);
+    transition: all 0.3s ease;
+}
+
+.nav:before{
+    height: 0%;
+    width: 2px;
+}
+
+.nav:after{
+    width: 0%;
+    height: 2px;
+}
+
+.nav:hover{
+    background: transparent;
+    box-shadow: none;
+}
+
+.nav:hover:before{
+    height: 100%;
+}
+
+.nav:hover:after{
+    width: 100%;
+}
+
+.nav p:hover{
+    color: var(--cor-preto);
+}
+
+.nav p:before, p:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: var(--cor-preto);
+    transition: all 0.3s ease;
+}
+
+.nav p:before{
+    width: 2px;
+    height: 0%;
+}
+
+.nav p:after{
+    width: 0%;
+    height: 2px;
+}
+
+.nav p:hover:before{
+    height: 100%;
+}
+
+.nav p:hover:after{
+    width: 100%;
+}
 
 /*FIM DO MENU SUPERIOR*/
 
@@ -311,8 +498,9 @@ DIV DA ILUSTRAÇÃO MOBILE
 ILUSTRAÇÃO MOBILE
 */
 #tela_ilus{
-    width: 70%;
-    /*max-width: 100%;*/
+    /*IMAGEM RESPONSIVA*/
+    width: 90%;
+    max-width: 490px;
     height: auto;
     max-height: 490px;
     cursor: pointer;  
@@ -502,6 +690,7 @@ TODAS AS col
 .col{
     /*display flex PARA TODAS AS col*/
     display: flex;
+    flex-wrap: wrap;
     align-items: left;
     justify-content: space-between;
     width: 100%;
