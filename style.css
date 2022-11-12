@@ -57,10 +57,33 @@ html, body{
 /*
 Responsividade
 */
+
 @media screen and (max-width: 630px) {
     /*MENU SUPERIOR*/
     .barra{
         display: none;
+    }
+
+    /*HAMBURGUER FULLSCREEN*/
+    .hamburguer.click{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        /*SOBREPOSIÇÃO NÍVEL 1*/
+        z-index: 1;
+    }
+
+    .sand{
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
     }
 
     /*MENU SUPERIOR MOBILE*/
@@ -72,37 +95,17 @@ Responsividade
         transition-duration: 0.3s;
     }
 
-    /*HAMBURGUER FULLSCREEN*/
-    .hamburguer.click{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: white;
-        /*SOBREPOSIÇÃO DO MENU*/
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .sand{
-        width: 40px;
-        height: 30px;
-        margin-right: 20px;
-    }
-
     /*MENU HAMBURGUER ABERTO*/
     .hamburguer.click, .barra{
         display: block;
-        z-index: 10;
+        /*SOBREPOSIÇÃO NÍVEL 2*/
+        z-index: 2;
     }
 
     .hamburguer.click .sand{
         position: absolute;
-        right: 0;
-        top: 15;
+        right: 25px;
+        top: 15px;
     }
 
     /*MENU EM "X" (APENAS MOBILE)*/
@@ -124,10 +127,24 @@ Responsividade
     }
 
     .hamburguer.click, .barra ul a{
-        transition-duration: 0.5s;
-        font-size: 16px;
-        line-height: 1.6rem;
         display: block;
+        transition-duration: 0.3s;
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    /*POSICIONAMENTO DO MENU*/
+    .barra{
+        margin-left: 28%;
+        margin-right: 40%;
+    }
+
+    .bt_menu.nav{
+        /*PARÂMETROS EXCLUSIVOS DO BOTÃO*/
+        transition-duration: 0.3s;
+        width: 138px;
+        height: 48px;
+        font-size: 1.2rem;
     }
 
     /*COLUNAS MEIO DA PÁGINA*/
@@ -286,6 +303,7 @@ BOTÃO DO MENU SUPERIOR
     margin-bottom: 1.4%;
 }
 
+/*AQUI, "nav" ENTRA COMO UMA SUB-CLASSE DO BOTÃO NO header*/
 .nav{
     background-color: var(--cor-azul);
     background: linear-gradient(0deg, var(--cor-azul) 0%, #1d5da1 100%);
@@ -738,12 +756,30 @@ TODAS AS col
 
 /*FIM DO MEIO DA PÁGINA*/
 
+
+.section-plano{
+    background-color: var(--cor-amarelo);
+    margin-top: 8%;
+    margin-bottom: auto;
+    padding-top: 8%;
+    padding-bottom: 1.96%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+ }
+ 
+ .cards{
+     align-items: center;
+     display: auto;
+ }
+
 .plano{
     border: 0.5px solid black;
     width: 250px;
     height: 300px;
     text-align: center;
-    position: static;
+    position: relative;
     background-color: var(--cor-cinza);
     color: black;
     border-radius: 5%;
@@ -763,18 +799,81 @@ TODAS AS col
     font-size: large;
 }
 
+.pattern {
+    /*display: flex;*/
+    position: relative;
+    background-color: var(--cor-amarelo);
+    height: 150px;
+}
+
+.pattern:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(img/ondas2.png);
+    background-size: contain;
+    background-repeat: round;
+}
+
 /*RODAPÉ DA PÁGINA*/
 
+footer {
+    /* background-color: var(--cor-cinza);*/
+    width: auto;
+    height: auto;
+    padding-top: 8%;
+    padding-bottom: 1.4%;
+ }
+
 .cont_footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    column-gap: 1.4%;
+    row-gap: 1.4%;
     width: 80%;
     position: relative;
     margin-left: auto;
     margin-right: auto;
 }
 
+.about{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.about li{
+    list-style: none;
+}
+
+.about li a{
+    color: black;
+}
+
+.about ul {
+    list-style-type: disc;
+}
+
 .item-col{
-    margin-top: 1.4%;
-    margin-bottom: 1.4%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: auto;
+    margin-bottom: auto;
     padding-top: auto;
     padding-bottom: auto;
     margin-left: auto;
@@ -802,6 +901,9 @@ TODAS AS col
 
 .img-footer{
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding: 5px;
 }
 
@@ -811,52 +913,10 @@ TODAS AS col
     margin-left: 8px;
 }
 
-.geeks {
+/*.geeks {
     padding: 200px;
     text-align: center;
-}
-
-.pattern {
-    position: relative;
-    background-color: var(--cor-amarelo);
-    height: 150px;
-}
-
-.pattern:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: url(img/ondas2.png);
-    background-size: contain;
-    background-repeat:round;
-}
-
-.section-plano{
-   background-color: var(--cor-amarelo);
-   margin-top: 8%;
-   margin-bottom: auto;
-   padding-top: 8%;
-   padding-bottom: 1.96%;
-   margin-left: auto;
-   margin-right: auto;
-   padding-left: auto;
-   padding-right: auto;
-}
-
-.cards{
-    align-items: center;
-    display: auto;
-}
-
-footer {
-   /* background-color: var(--cor-cinza);*/
-height: 150px;
-padding-top: 25px;
-padding-bottom: 25px;
-}
+}*/
 
 /*.button-y:hover, .button-y:focus{
     
