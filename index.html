@@ -28,7 +28,7 @@
             LOGO BEELÍNGUE -> MENU SUPERIOR
         -->
         <a href="index.html">
-            <img src="img/logo_horizontal_transp.png" alt="logo beelíngue" id="logo_super">    
+            <img src="img/logo_horizontal_transp.png" alt="logo beelíngue" id="logo_super">
         </a>
         <!--
             MENU "HAMBURGUER" PARA DISPOSITIVOS MOBILE
@@ -44,13 +44,21 @@
 
         <nav class="barra">
             <ul class="menu">
-                <li><a href=""><p id="paragrafo_sup">Planos</p></a></li>
-                <li><a href=""><p id="paragrafo_sup">Sobre</p></a></li>
+                <li><a href="#section-plano">
+                        <p id="paragrafo_sup">Planos</p>
+                    </a></li>
+                <li><a href="">
+                        <p id="paragrafo_sup">Sobre</p>
+                    </a></li>
                 <!--BOTÃO "ENTRAR"-->
-                <li><a href=""><p id="paragrafo_sup">Entrar</p></a></li>
+                <li><a href="">
+                        <p id="paragrafo_sup">Entrar</p>
+                    </a></li>
                 <li>
                     <!--BOTÃO DE CADASTRO-->
-                    <button class="bt_menu nav"><p>Cadastrar-se</p></button>
+                    <button class="bt_menu nav">
+                        <p>Cadastrar-se</p>
+                    </button>
                 </li>
             </ul>
         </nav>
@@ -64,7 +72,8 @@
                 <!--TEXTO PRINCIPAL-->
                 <div class="up_cont">
                     <h1 id="tit_up">WELCOME!</h1>
-                    <p id="p_up">Com a Beelíngue, professores autônomos poderão ter acesso a maneira mais simples e eficaz de gerenciar suas aulas de inglês!</p>
+                    <p id="p_up">Com a Beelíngue, professores autônomos poderão ter acesso a maneira mais simples e
+                        eficaz de gerenciar suas aulas de inglês!</p>
                     <!--BOTÃO DE COMPRA-->
                     <button class="bt_super up"><span>Comprar agora</span></button>
                 </div>
@@ -144,33 +153,36 @@
         </div>
 
     </section>
-    <section class="section-plano">
 
-        <div class="">
-            <h1>PLANOS:</h1>
-        </div>
+    <!--
+        PLANOS DA BEELÍNGUE
+    -->
+    <section id="section-plano">
+        <h1 id="tit_comercial">PLANOS:</h1>
         <div class="cards">
             <div class="plano">
 
                 <h5>Básico</h5>
                 <ul>
                     <li>Suporte de software;</li>
-                    <li>Módulos prontos;</li>
+                    <li>Módulos standart;</li>
                     <li>Até 15 usuários.</li>
                 </ul>
-                <button class="">34,99/usuário</button>
+                <!--BOTÃO PLANO BÁSICO-->
+                <button class="bt_plan outline"><span></span>R$ 34,99/ usuário</span></button>
 
             </div>
 
             <div class="plano">
 
-                <h5> Premium</h5>
+                <h5>Premium</h5>
                 <ul>
                     <li>Suporte de software;</li>
-                    <li>Módulos personalizáveis;</li>
+                    <li>Módulos customizados;</li>
                     <li>Até 50 usuários.</li>
                 </ul>
-                <button class="">84,99/ usuário</button>
+                <!--BOTÃO PLANO PREMIUM-->
+                <button class="bt_plan outline"><span></span>R$ 84,99/ usuário</span></button>
 
             </div>
         </div>
@@ -184,36 +196,40 @@
         <!--rodapé para a página -->
 
         <div class="cont_footer">
-
             <div class="about">
-                <h4>Beelíngue</h4>
-                <p>A Beelíngue possui como mascote a abelha. Assim como ela, acreditamos que de flor em flor, através da polinização (como símbolo da educação), é possível mudar um sistema inteiro.</p>
+                <h4>Sobre nós:</h4>
+                <p>A Beelíngue possui como mascote a abelha. Assim como ela, acreditamos que de flor em flor, através da
+                    polinização (como símbolo da educação), é possível mudar um sistema inteiro.</p>
             </div>
             <div class="links_footer">
                 <h4>Empresa</h4>
                 <ul>
-                    <li><a href="">Sobre nós</a></li>
+                    <li><a href="">Nossa equipe</a></li>
                     <li><a href="">Termos de uso</a></li>
                     <li><a href="">Política de Privacidade</a></li>
                 </ul>
             </div>
             <div class="contato">
-                <h4>Contato</h4>
+                <h4>Contato: </h4>
                 <div class="img-footer">
-                    <img src="img/mail.png" class="icons-footer" alt="ícone de e-mail">
-                    <p>grupomsc06@gmail.com</p>
+                    <!--<img src="img/mail.png" class="icons-footer" alt="ícone de e-mail">-->
+                    <i class='bx bxl-gmail bx-md'><p class="bx_text">grupomsc06@gmail.com</p></i>
+                    
                 </div>
                 <div class="img-footer">
-                    <img src="img/instagram.png" class="icons-footer" alt="ícone do instagram">
-                    <p>@beelingue_oficial</p>
+                    <!--<img src="img/instagram.png" class="icons-footer" alt="ícone do instagram">-->
+                    <i class='bx bxl-instagram bx-md'><p  class="bx_text">@beelingue_oficial</p></i>
+                    
                 </div>
             </div>
 
-            <div class="barra_inf">
-
-            </div>
         </div>
 
+        <div class="barra_inf">
+            <p id="desc_footer">© 2022 Copyright: <a href="index.html">Beelingue.com</a></p>
+
+            <i class='bx bx-chevrons-up bx-sm' onclick="voltarTopo()"><p id="top">Voltar ao topo</p></i>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>

@@ -146,13 +146,21 @@ Responsividade
         height: 48px;
         font-size: 1.2rem;
     }
+}
 
+@media screen and (max-width: 600px){
     /*COLUNAS MEIO DA PÁGINA*/
-    .col.first{
+    .cards{
         flex-direction: column;
     }
 
-    .col.two{
+    /*FOOTER*/
+    .cont_footer{
+        padding-left: 8%;
+        padding-bottom: 16%;
+    }
+
+    .cont_footer .contato, .links_footer, .about{
         flex-direction: column;
     }
 
@@ -182,6 +190,10 @@ h1{
 h3{
     font-size: 1.2rem;
     text-transform: uppercase;
+}
+
+h5{
+    text-transform: capitalize;
 }
 
 p{
@@ -274,6 +286,7 @@ ESTILO DE TEXTO PARA MENUS NO HEADER
 /*
 BOTÃO DO MENU SUPERIOR
 */
+/*Código adaptado de: @yuhomyan*/
 .bt_menu{
     display: flex;
     /*ALINHAMENTO*/
@@ -756,8 +769,13 @@ TODAS AS col
 
 /*FIM DO MEIO DA PÁGINA*/
 
-
-.section-plano{
+/*PARTE DE PLANOS*/
+#section-plano{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 8rem;
+    text-align: center;
     background-color: var(--cor-amarelo);
     margin-top: 8%;
     margin-bottom: auto;
@@ -768,35 +786,87 @@ TODAS AS col
     padding-left: auto;
     padding-right: auto;
  }
+
+ /*TÍTULO: "PLANOS"*/
+ #tit_comercial{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+ }
  
  .cards{
-     align-items: center;
-     display: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 1.2rem;
+    align-items: center;
+    width: auto;
+    height: auto;
  }
 
 .plano{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
     border: 0.5px solid black;
     width: 250px;
-    height: 300px;
+    height: 364px;
     text-align: center;
     position: relative;
     background-color: var(--cor-cinza);
     color: black;
     border-radius: 5%;
+    padding: 1.4%;
 }
 
 .plano ul{
     text-align: justify;
-    margin-top: 60px;
-}
-
-.plano button{
-    margin-top: 60px;
-
 }
 
 .plano h5{
     font-size: large;
+}
+
+/*BOTÕES DE COMPRA/PREÇO*/
+/*Código adaptado de: @yuhomyan*/
+.bt_plan{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 100%;
+    max-width: 130px;
+    height: 100%;
+    max-height: 40px;
+    position: relative;
+    margin-top: 1.4%;
+    margin-bottom: 1.4%;
+    margin-left: 18%;
+    margin-right: 1.4%;
+    padding-top: 1.4%;
+    padding-bottom: 1.4%;
+    border: 2px solid #000;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.outline{
+    transition: all 0.3s ease;
+}
+
+.outline:hover{
+    box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
 }
 
 .pattern {
@@ -817,6 +887,7 @@ TODAS AS col
     background-size: contain;
     background-repeat: round;
 }
+/*FIM DA PARTE DE PLANOS*/
 
 /*RODAPÉ DA PÁGINA*/
 
@@ -830,12 +901,12 @@ footer {
 
 .cont_footer{
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
     column-gap: 1.4%;
-    row-gap: 1.4%;  
+    row-gap: 8%;  
     width: 100%;
-    height: 100%;
+    height: auto;
     position: relative;
     padding: auto;
     margin: auto;
@@ -847,8 +918,7 @@ footer {
     grid-row-start: 1;
     grid-row-end: 2;
     display: flex;
-    flex-direction: column;
-    column-count: 1;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: left;
     margin: 1.4%;
@@ -872,8 +942,7 @@ footer {
     grid-row-start: 1;
     grid-row-end: 2;
     display: flex;
-    flex-direction: column;
-    column-count: 1;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: left;
     margin: 1.4%;
@@ -891,18 +960,21 @@ footer {
     list-style-type: disc;
 }
 
+.links_footer h4{
+    padding-bottom: 2.74%;
+}
+
 .contato{
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
     display: flex;
-    flex-direction: column;
-    column-count: 1;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: space-around;
     padding-top: auto;
-    padding-bottom: auto;
+    padding-bottom: 1.4%;
     margin-left: 1.4%;
     margin-right: 1.4%;
     padding-left: auto;
@@ -919,6 +991,11 @@ footer {
 
 .contato ul {
     list-style-type: disc;
+}
+
+.contato h4{
+    padding-bottom: 1.4%;
+    padding-left: 1.4%;
 }
 
 .icons-footer{
@@ -938,14 +1015,42 @@ footer {
     padding: 0;
 }
 
+.bx{
+    cursor: pointer;
+}
+
+.bx_text{
+    font-size: 16px;
+}
+
 .barra_inf{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+    text-align: center;
     background-color: #e6e6e6;
+    margin-top: 1.4%;
     width: auto;
-    height: auto;
+    height: 64px;
+}
+
+.barra_inf p{
+    opacity: 70%;
+}
+
+.barra_inf a{
+    font-weight: bold;
+}
+
+#desc_footer{
+    margin-left: 40%;
+}
+
+#top{
+    margin: 1.4%;
+    cursor: pointer;
+    font-size: 11px;
 }
 
 /*.geeks {

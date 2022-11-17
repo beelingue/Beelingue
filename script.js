@@ -14,3 +14,9 @@ menuSand.addEventListener("click", () =>{
     menuHamburguer.classList.toggle("click", show)
     show = !show;
 })
+
+// toda a página = BOTÃO VOLTAR AO TOPO
+//código adaptado de Mauro Alexandre
+var voltarTopo = function() {
+    window.scrollTo(0, 0);
+};
