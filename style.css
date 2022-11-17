@@ -814,7 +814,7 @@ TODAS AS col
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
-    border: 0.5px solid black;
+    border: 0.5px solid var(--cor-azul);
     width: 250px;
     height: 364px;
     text-align: center;
