@@ -164,6 +164,10 @@ Responsividade
         flex-direction: column;
     }
 
+    .barra_inf{
+        flex-direction: column;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -975,7 +979,7 @@ footer {
     grid-row-start: 2;
     grid-row-end: 3;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: auto;
@@ -1011,7 +1015,8 @@ footer {
 .img-footer{
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
+    margin-left: 1.4%;
+    margin-bottom: 5%;
     padding: 0;
 }
 
@@ -1032,6 +1037,7 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-content: center;
     /*justify-content: space-between;*/
     text-align: center;
     background-color: #e6e6e6;
@@ -1048,9 +1054,6 @@ footer {
     font-weight: bold;
 }
 
-#desc_footer{
-    margin-left: 40%;
-}
 
 #box_top{
     margin-top: 0.9%;
