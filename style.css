@@ -936,6 +936,11 @@ footer {
     list-style-type: disc;
 }
 
+.about p{
+    
+    padding-right: 50%;
+}
+
 .links_footer{
     grid-column-start: 3;
     grid-column-end: 4;
@@ -1032,7 +1037,7 @@ footer {
     background-color: #e6e6e6;
     margin-top: 1.4%;
     width: auto;
-    height: 64px;
+    height: 72px;
 }
 
 .barra_inf p{
@@ -1047,8 +1052,17 @@ footer {
     margin-left: 40%;
 }
 
+#box_top{
+    margin-top: 0.9%;
+    margin-bottom: 0.9%;
+    opacity: 0.8;
+    border: 2px solid #000;
+    border-radius: 5%;
+}
+
 #top{
-    margin: 1.4%;
+    padding-left: 5px;
+    padding-right: 5px;
     cursor: pointer;
     font-size: 11px;
 }
