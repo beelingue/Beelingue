@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Ferramenta digital de ensino">
@@ -13,20 +13,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-escalabe=no">
 
     <title>Conheça a Beelíngue</title>
-    <link rel="icon" type="image/png" href="img/logo_bee_icon.png"/>
+    <link rel="icon" type="image/png" href="img/logo_bee_icon.png" />
     <!--BOX ICONS-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<div class="container">
-    <header></header>
+    <!--TODA A PÁGINA-->
+    <div class="container">
+        <!--MENU SUPERIOR-->
+        <header class="header">
+            <!--
+            LOGO BEELÍNGUE
+            -->
+            <a href="index.html">
+                <img src="img/logo_horizontal_transp.png" alt="logo beelíngue" id="logo_header">
+            </a>
+            <nav class="menu">
+                <ul class="cont_menu">
+                    <li><a href="">
+                            <p id="paragrafo_sup">Planos</p>
+                        </a></li>
+                    <li><a href="">
+                            <p id="paragrafo_sup">Sobre</p>
+                        </a></li>
+                    <!--BOTÃO "ENTRAR"-->
+                    <li><a href="">
+                            <p id="paragrafo_sup">Entrar</p>
+                        </a></li>
+                    <li>
+                        <!--BOTÃO DE CADASTRO-->
+                        <button class="bt_menu nav">
+                            <p>Cadastrar-se</p>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-    <main></main>
+        <!--CONTEÚDO PRINCIPAL-->
+        <main>
+            <div id="cont">
+                <h2>Olá Mundo!</h2>
 
-    <footer></footer>
-</div>
+                <p>Com a Beelíngue, professores autônomos poderão ter acesso a maneira mais simples e
+                eficaz de gerenciar suas aulas de inglês!</p>
+
+                <img src="img/plat-transp.png" id="tela_ilus" alt="display mobile">
+            </div>
+        </main>
+
+        <!--RODAPÉ-->
+        <footer></footer>
+    </div>
 </body>
 
 </html>

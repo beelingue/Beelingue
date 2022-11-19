@@ -38,23 +38,254 @@ html, body{
     -webkit-font-smoothing: antialiased;
 }
 
-/*CABEÇALHO DA PÁGINA*/
-header{
-    background-color: var(--cor-cinza);
-    height: 100px;
+/*
+ESPAÇAMENTO DE LETRAS PARA TÍTULOS NO SITE E FORMATAÇÃO
+*/
+h1, h2{
+    text-transform: uppercase;
+    letter-spacing: 0.9vh;
 }
 
-main{
+/*
+TAMANHO DA TIPOGRAFIA EM TAGS h1
+*/
+h1{
+    font-size: 4.5vh;
+}
+
+h3{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+h5{
+    text-transform: capitalize;
+}
+
+p{
+   word-wrap: break-word;
+   line-height: 1.6;
+   margin-top: auto;
+   margin-bottom: auto;
+   padding-top: 0.9%;
+   padding-bottom: 0.9%;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: auto;
+   padding-right: auto;
+}
+
+a, ul, li{
+    text-decoration: none;
+    list-style: none;
+    color: var(--cor-preto);
+}
+
+@media screen and (max-witdh: 600px){
+    #cont{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    width: 100vw;
+    height: 100vh; 
+}
+
+/*CABEÇALHO DA PÁGINA*/
+.header{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 80px;
+    margin: 0.9%;
+    font-size: 0.9rem;  
+}
+
+#logo_header{
+    /*TAMANHO RESPONSIVO*/
+    width: 90%;
+    max-width: 160px;
+    height: 100%;
+    max-height: 50px;
+}
+
+.menu p{
+    opacity: 0.7;  
+}
+
+.cont_menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cont_menu li{
+    margin-left: 1.2em;
+}
+
+.cont_menu li a{
+    display: block;
+    padding: 1em;
+}
+
+.bt_menu{
+    display: flex;
+    /*ALINHAMENTO*/
+    align-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    /*COLUNAS*/
+    flex-direction: column;
+    column-count: 1;
+    /*COR DA FONTE*/
+    color: #ffffff;
+    background: transparent;
+    cursor: pointer;
+    /*TAMANHO DO BOTÃO*/
+    width: 130px;
+    height: 40px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    outline: none;
+    box-shadow:inset
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+    border: none;
+    /*ESPAÇAMENTO*/
+    margin-top: 1.4%;
+    margin-bottom: 1.4%;
+}
+
+/*AQUI, "nav" ENTRA COMO UMA SUB-CLASSE DO BOTÃO NO header*/
+.nav{
     background-color: var(--cor-azul);
-    height: 100px;
+    background: linear-gradient(0deg, var(--cor-azul) 0%, #1d5da1 100%);
+    width: 130px;
+    height: 40px;
+}
+
+.nav p{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 7%;
+}
+
+.nav:before, .nav:after{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: var(--cor-preto);
+    transition: all 0.3s ease;
+}
+
+.nav:before{
+    height: 0%;
+    width: 2px;
+}
+
+.nav:after{
+    width: 0%;
+    height: 2px;
+}
+
+.nav:hover{
+    background: transparent;
+    box-shadow: none;
+}
+
+.nav:hover:before{
+    height: 100%;
+}
+
+.nav:hover:after{
+    width: 100%;
+}
+
+.nav p:hover{
+    color: var(--cor-preto);
+}
+
+.nav p:before, p:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: var(--cor-preto);
+    transition: all 0.3s ease;
+}
+
+.nav p:before{
+    width: 2px;
+    height: 0%;
+}
+
+.nav p:after{
+    width: 0%;
+    height: 2px;
+}
+
+.nav p:hover:before{
+    height: 100%;
+}
+
+.nav p:hover:after{
+    width: 100%;
+}
+
+/*CONTEÚDO PRINCIPAL*/
+/*main{
+}*/
+
+#cont{
+    width: auto;
+    height: 100%;
+    background-color: var(--cor-azul);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    row-gap: 1.4%;
+    padding: 1.4%;
+}
+
+#cont h2{
+    color: white;
+}
+
+#cont p{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: white;
+    font-size: 1rem;
+}
+
+#tela_ilus{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    /*IMAGEM RESPONSIVA*/
+    width: 90%;
+    max-width: 490px;
+    height: auto;
+    max-height: 490px;
+    cursor: pointer;  
 }
 
 /*RODAPÉ DA PÁGINA*/
 footer{
     background-color: var(--cor-darkgray);
-    height: 100px;
-}
-
-.container{
-    display: grid;
+    height: auto;
 }
