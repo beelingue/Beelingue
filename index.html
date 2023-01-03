@@ -1,202 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="pt-BR" dir="ltr">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Beelíngue </title>
-    <link rel="stylesheet" href="estilos/style.css">
-</head>
+    <title> Beelingue Plataform </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
-    <!-- menu -->
-   <main>
-    <header>
-        <a> logo </a>
-        <nav>
-        <ul>
-            <li> Home</li>
-            <li> Planos </li>
-            <li> Sobre</li>
+<!-- Side navbar-->
+  <div class="sidebar close">
+    <div class="logo-details">
+      <a class="navbar-brand"><img src="image/logos/logo abelha transp.png"
+      width="100%"
+      height="100%"
+      ></a>
+      <span class="logo_name">Beelíngue</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Módulos</a></li>
         </ul>
-        <div>
-            <button> Entrar </button>
-            <button> Cadastrar-se </button>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Módulos</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
         </div>
-    </nav>
-    </header>
-   </main>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Módulos</a></li>
+          <li><a href="#">Eu</a></li>
+          <li><a href="#">Sei</a></li>
+          <li><a href="#">Lá</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-task' ></i>
+          <span class="link_name">Tarefas</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Tarefas</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-pie-chart-alt-2' ></i>
+            <span class="link_name">Estátisticas</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Estátisticas</a></li>
+          <li><a href="#">Depressão</a></li>
+          <li><a href="#">Caganeira</a></li>
+          <li><a href="#">TCC</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-chat' ></i>
+          <span class="link_name">Chat</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Chat</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-user'></i>
+          <span class="link_name">Usuário</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Usuário</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Configuração</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Configuração</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+        <img src="image/profile.jpg" alt="profileImg">
+      </div>
+      <div class="name-job">
+        <div class="profile_name">Sonic Judeu</div>
+        <div class="job">Aluno</div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+  <!-- Side navbar-->
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Modulos</span>
 
-   <!-- apresentação inicial -->
-<div>
-    <div>
-        <div>
-            <div> <h1> LOREM ipsum dolor sit amet, consectetur 
-                adipiscing elit, SED do eiusmod TEMPOR </h1>
+      <div class="content">
+        <!-- Modulo 1 -->
+        <div class="card one" value="Redirecionar sem Histórico" onclick="redirecioneComHistorico();">
+          <div class="top">
+            <div class="title">Modulo</div>
+            <div class="price-sec">
+              <span class="price">1</span>
             </div>
-            <div>
-                <h4> Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-                    accusantium doloremque laudantium, totam rem aperiam.</h4>
+          </div>
+          <div class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel porta odio.
+             Duis vel nulla nec est sodales viverra quis et velit. Aenean sodales leo est, non tempus diam convallis nec. 
+             Donec nisi massa, consectetur at tincidunt accumsan, euismod ut tortor.</div>
+          <div class="details">
+            <div class="one">
             </div>
-            <div>
-                <button> Teste GRÁTIS </button>
-                <button> Matricular-se</button>
+          </div>
+        </div>
+
+        <!-- Modulo 2 -->
+        <div class="card two" value="Redirecionar sem Histórico" onclick="redirecioneComHistorico2();">
+          <div class="top">
+            <div class="title">Modulo</div>
+            <div class="price-sec">
+              <span class="price">2</span>
             </div>
-        </div>
-
-        <div> 
-            <img> <!-- img da plataforma -->
-        </div>
-    </div>
-
-
-</div>
-<div> <!-- BLOCO https://getbootstrap.com/docs/5.2/examples/features/ --> 
-    <div> 
-        <div> <h1> POR QUE A BEELÍNGUE? </h1>
-        </div>
-        <div> <h4> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-            enim ipsam voluptatem quia </h4>
-        </div>
-    </div>
- 
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-    
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-
-    <div>
-        <div> icone </div>
-        <h2>
-            Finibus Bonorum 
-        </h2>
-        <p>
-            met, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna.
-        </p>
-    </div>
-</div>
-
-
-
-<div>
-    <div>
-        <h1>
-            LOREM IPSUM
-        </h1>
-    </div>
-    <div>
-        <div>
-            plano 1
-            <div> 
-                <button> teste GRATIS </button>
+          </div>
+          <div class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel porta odio.
+            Duis vel nulla nec est sodales viverra quis et velit. Aenean sodales leo est, non tempus diam convallis nec. 
+            Donec nisi massa, consectetur at tincidunt accumsan, euismod ut tortor.</div>
+          <div class="details">
+            <div class="one">
             </div>
+          </div>
         </div>
-        <div>
-            plano 2
-            <div> 
-                <button> R$75 </button>
+        
+        <!-- Modulo 3 -->
+        <div class="card three" value="Redirecionar sem Histórico" onclick="redirecioneComHistorico3();">
+          <div class="top">
+            <div class="title">Modulo</div>
+            <div class="price-sec">
+              <span class="price">3</span>
             </div>
+          </div>
+          <div class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel porta odio.
+            Duis vel nulla nec est sodales viverra quis et velit. Aenean sodales leo est, non tempus diam convallis nec. 
+            Donec nisi massa, consectetur at tincidunt accumsan, euismod ut tortor.</div>
+          <div class="details">
+            <div class="one">
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-<div>
-    <footer>
-        <div>
-        <div>
-            <img> logo
-        </div>
-        <h3>
-            mnis iste natus error sit voluptatem accusantium
-doloremque laudantium, totam rem aperiam.
-        </h3>
- <div>
-    <h2> NOVAS BOLSAS DE ESTUDO </h2>
-    <div>
-        <form>
-            <input type="text" placeholder="email@exemplo.com">
-            <input type="submit" value="enviar">
-            </form>
-    </div>
- </div>
-    </div>
-<div>
-    <ul>
-        <li> <a > LOREM </a></li>
-        <li> <a > LOREM </a></li>
-        <li> <a > Suporte </a></li>
-    </ul>
-</div>
-    </footer>
-</div>
-
+  </section>
+  <script src="script.js"></script>
 </body>
 </html>
